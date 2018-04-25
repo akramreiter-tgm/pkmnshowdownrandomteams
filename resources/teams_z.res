@@ -233,7 +233,7 @@ IVs: 15 Def / 0 Spe
 *
 Durant (M) @ Darkinium Z  
 Ability: Hustle  
-Level: 76  
+Level: 77  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Hone Claws  

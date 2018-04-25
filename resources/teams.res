@@ -1033,7 +1033,7 @@ Timid Nature
 *
 Zoroark (M) @ Life Orb  
 Ability: Illusion  
-Level: 76  
+Level: 77  
 Shiny: Yes  
 EVs: 4 HP / 252 SpA / 252 Spe  
 Timid Nature  
