@@ -23,9 +23,26 @@ public class Teamgenerator extends Application {
 	static ArrayList<String> pkmn, pkmnmega, pkmnz;
 	public static void main(String[] args) {
 		try {
-			RandomAccessFile rf = new RandomAccessFile(new File("src/teams.res"), "rw");
-			RandomAccessFile rfm = new RandomAccessFile(new File("src/teams_mega.res"), "rw");
-			RandomAccessFile rfz = new RandomAccessFile(new File("src/teams_z.res"), "rw");
+			String zloc = "", megaloc = "", pkmnloc = "";
+			System.out.println("hi");
+			@SuppressWarnings("resource")
+			RandomAccessFile conf = new RandomAccessFile(new File("resources/general.cfg"), "rw");
+			System.out.println("hi2");
+			try {
+				while (zloc.length() == 0 || megaloc.length() == 0 || pkmnloc.length() == 0) {
+					String s = conf.readLine();
+					System.out.println(s);
+					if (s.startsWith("zloc")) zloc = s.substring(s.indexOf(':') + 1);
+					if (s.startsWith("megaloc")) megaloc = s.substring(s.indexOf(':') + 1);
+					if (s.startsWith("pkmnloc")) pkmnloc = s.substring(s.indexOf(':') + 1);
+				}
+			}catch (Exception e) {
+				e.printStackTrace();
+			}
+			System.out.println("hi3");
+			RandomAccessFile rf = new RandomAccessFile(new File("resources/" + pkmnloc), "rw");
+			RandomAccessFile rfm = new RandomAccessFile(new File("resources/" + megaloc), "rw");
+			RandomAccessFile rfz = new RandomAccessFile(new File("resources/" + zloc), "rw");
 			pkmn = new ArrayList<>();
 			pkmnmega = new ArrayList<>();
 			pkmnz = new ArrayList<>();
