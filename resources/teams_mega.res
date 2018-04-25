@@ -115,6 +115,7 @@ Jolly Nature
 *
 Diancie-Mega @ Diancite  
 Ability: Magic Bounce  
+Level: 73  
 EVs: 4 Atk / 252 SpA / 252 Spe  
 Hasty Nature  
 - Diamond Storm  
