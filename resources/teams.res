@@ -333,11 +333,9 @@ Ability: Justified
 Level: 73  
 EVs: 248 SpA / 8 SpD / 252 Spe  
 Timid Nature  
-IVs: 0 Atk  
 - Surf  
 - Secret Sword  
 - Icy Wind  
-- Hidden Power [Fire]  
 *
 Landorus-Therian @ Rocky Helmet  
 Ability: Intimidate  
@@ -393,7 +391,7 @@ IVs: 0 Atk
 - Hydro Pump  
 *
 Skarmory (M) @ Rocky Helmet  
-Ability: Keen Eye  
+Ability: Sturdy  
 Level: 73  
 EVs: 252 HP / 252 Def / 4 SpD  
 Impish Nature  
@@ -787,9 +785,7 @@ IVs: 0 Atk
 Magnezone @ Choice Specs  
 Ability: Magnet Pull  
 Level: 76  
-EVs: 248 HP / 252 SpA / 8 SpD  
 Modest Nature  
-IVs: 0 Atk  
 - Flash Cannon  
 - Volt Switch  
 - Signal Beam  
@@ -1034,7 +1030,6 @@ Timid Nature
 Zoroark (M) @ Life Orb  
 Ability: Illusion  
 Level: 77  
-Shiny: Yes  
 EVs: 4 HP / 252 SpA / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -1304,7 +1299,6 @@ IVs: 0 Atk
 - Volt Switch  
 - Hidden Power [Ice]  
 - Thunderbolt  
-- Shadow Ball  
 *
 Lycanroc-Dusk (M) @ Life Orb  
 Ability: Tough Claws  

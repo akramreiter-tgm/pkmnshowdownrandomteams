@@ -105,7 +105,7 @@ public class Teamgenerator extends Application {
 				+ "this software should be\n"
 				+ "imported in Pokemon Showdown.\n"
 				+ "and should be used in\n"
-				+ "the AG(Anything goes) format\n"
+				+ "Custom Battles\n"
 				+ "(play.pokemonshowdown.com)\n\n"
 				+ "The developer of this\n"
 				+ "software isn't associated\n"
