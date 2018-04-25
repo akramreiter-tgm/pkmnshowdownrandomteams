@@ -1336,7 +1336,7 @@ Impish Nature
 - U-turn  
 - Roost  
 *
-Meloetta @ Choice Scarf  
+Meloetta @ Life Orb  
 Ability: Serene Grace  
 Level: 79  
 EVs: 252 SpA / 4 SpD / 252 Spe  
