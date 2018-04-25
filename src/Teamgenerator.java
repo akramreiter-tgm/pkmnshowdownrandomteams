@@ -104,11 +104,18 @@ public class Teamgenerator extends Application {
 		result.setText("Teams generated with this\n"
 				+ "this software should be\n"
 				+ "imported in Pokemon Showdown.\n"
+				+ "and should be used in\n"
+				+ "the AG(Anything goes) format\n"
 				+ "(play.pokemonshowdown.com)\n\n"
 				+ "The developer of this\n"
 				+ "software isn't associated\n"
 				+ "with the developers of\n"
-				+ "Pokemon Showdown");
+				+ "Pokemon Showdown\n\n"
+				+ "If you encounter any\n"
+				+ "pkmn that can't be imported,\n"
+				+ "are at lvl 100 please\n"
+				+ "or have awful movesets\n"
+				+ "report the issue on github");
 		primaryStage.setScene(chatScene);
 		bp.setCenter(result);
 		
