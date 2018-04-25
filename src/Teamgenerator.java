@@ -14,6 +14,11 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
+/**
+ * @author alexk
+ * a random generator for Pokemon Showdown teams
+ */
+
 public class Teamgenerator extends Application {
 	static ArrayList<String> pkmn, pkmnmega, pkmnz;
 	@SuppressWarnings("resource")
@@ -95,6 +100,15 @@ public class Teamgenerator extends Application {
 		Scene chatScene = new Scene(bp);
 		TextArea result = new TextArea(); 
 		result.setScrollTop(5);
+		result.setEditable(false);
+		result.setText("Teams generated with this\n"
+				+ "this software should be\n"
+				+ "imported in Pokemon Showdown.\n"
+				+ "(play.pokemonshowdown.com)\n\n"
+				+ "The developer of this\n"
+				+ "software isn't associated\n"
+				+ "with the developers of\n"
+				+ "Pokemon Showdown");
 		primaryStage.setScene(chatScene);
 		bp.setCenter(result);
 		
