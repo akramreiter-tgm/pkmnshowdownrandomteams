@@ -38,7 +38,7 @@ Jolly Nature
 - Dragon Ascent  
 - Extreme Speed  
 - Swords Dance  
-- V-create  
+- Earthquake  
 *
 Lucario-Mega (M) @ Lucarionite  
 Ability: Adaptability  
