@@ -4,28 +4,23 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 import javafx.application.Application;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 public class Teamgenerator extends Application {
 	static ArrayList<String> pkmn, pkmnmega, pkmnz;
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		try {
 			String zloc = "", megaloc = "", pkmnloc = "";
 			System.out.println("hi");
-			@SuppressWarnings("resource")
 			RandomAccessFile conf = new RandomAccessFile(new File("resources/general.cfg"), "rw");
 			System.out.println("hi2");
 			try {
