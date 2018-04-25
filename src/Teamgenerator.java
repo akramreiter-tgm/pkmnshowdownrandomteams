@@ -168,7 +168,7 @@ public class Teamgenerator extends Application {
 				for (Integer i : ids) {
 					res += temp.get(i.intValue()) + "\n\n";
 				}
-				result.setText(res);
+				result.setText(res.substring(0,res.length() - 2));
 			}
 		});
 		
