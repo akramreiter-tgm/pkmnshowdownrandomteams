@@ -1,0 +1,187 @@
+{
+  "pkmn": [
+    {
+      "name":"Landorus-Therian",
+      "sets": [
+        {
+          "item":"Choice Scarf",
+          "ability":"Intimidate",
+		  "level":70,
+          "ev":"4 HP / 252 Atk / 252 Spe",
+          "nature":"Jolly",
+          "iv":"",
+          "movesets":[
+            [
+              "Earthquake",
+              "U-turn",
+              "Stone Edge",
+              "Stealth Rock"
+            ],
+            [
+              "Earthquake",
+              "U-turn",
+              "Stone Edge",
+              "Knock Off"
+            ],
+            [
+              "Earthquake",
+              "U-turn",
+              "Hidden Power [Ice]",
+              "Defog"
+            ]
+          ]
+        },
+        {
+          "item":"Rocky Helmet",
+          "ability":"Intimidate",
+		  "level":70,
+          "ev":"252 HP / 4 Atk / 252 Def",
+          "nature":"Impish",
+          "iv":"",
+          "movesets":[
+            [
+              "Earthquake",
+              "Hidden Power [Ice]",
+              "Stealth Rock",
+              "U-turn"
+            ],
+            [
+              "Earthquake",
+              "Hidden Power [Ice]",
+              "Defog",
+              "U-turn"
+            ]
+          ]
+        },
+		{
+          "item":"Leftovers",
+          "ability":"Intimidate",
+		  "level":70,
+          "ev":"252 HP / 4 Atk / 252 Def",
+          "nature":"Impish",
+          "iv":"",
+          "movesets":[
+            [
+              "Earthquake",
+              "Hidden Power [Ice]",
+              "Stealth Rock",
+              "U-turn"
+            ],
+            [
+              "Earthquake",
+              "Hidden Power [Ice]",
+              "Defog",
+              "U-turn"
+            ]
+          ]
+        },
+		{
+          "item":"Focus Sash",
+          "ability":"Intimidate",
+		  "level":70,
+          "ev":"4 HP / 252 Atk / 252 Spe",
+          "nature":"Jolly",
+          "iv":"",
+          "movesets":[
+            [
+              "Earthquake",
+              "Knock Off",
+              "Rock Polish",
+              "Swords Dance"
+            ],
+			[
+              "Earthquake",
+              "Return",
+              "Rock Polish",
+              "Swords Dance"
+            ],
+			[
+              "Earthquake",
+              "Brick Break",
+              "Rock Polish",
+              "Swords Dance"
+            ]
+          ]
+        },
+		{
+          "item":"Flyinium Z",
+          "ability":"Intimidate",
+		  "level":70,
+          "ev":"4 HP / 252 Atk / 252 Spe",
+          "nature":"Jolly",
+          "iv":"",
+          "movesets":[
+            [
+              "Earthquake",
+              "Fly",
+              "Smack Down",
+              "Stealth Rock"
+            ]
+          ]
+        },
+		{
+          "item":"Rockium Z",
+          "ability":"Intimidate",
+		  "level":70,
+          "ev":"4 HP / 252 Atk / 252 Spe",
+          "nature":"Jolly",
+          "iv":"",
+          "movesets":[
+            [
+              "Earthquake",
+              "Stone Edge",
+              "Stealth Rock",
+              "U-turn"
+            ]
+          ]
+        }
+      ]
+    },
+	
+	{
+      "name":"Heatran",
+      "sets":[
+        {
+          "item":"Firium Z",
+          "ability":"",
+		  "level":70,
+          "ev":"4 HP / 252 SpA / 252 Spe",
+          "nature":"Modest",
+          "iv":"0 Atk",
+          "movesets":[
+            [
+              "Magma Storm",
+              "Earth Power",
+              "Taunt",
+              "Stealth Rock"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  
+  
+  "blank set":
+	{
+      "name":"",
+      "sets":[
+        {
+          "item":"",
+          "ability":"",
+		  "level":0,
+          "ev":"",
+          "nature":"",
+          "iv":"",
+          "movesets":[
+            [
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        }
+      ]
+    }
+}
