@@ -80,5 +80,18 @@
 			"Wood Hammer",
 			"Worry Seed"
 		]
+	},
+	"Magikarp":{
+		"items":[],
+		"abil":["Swift Swim","Rattled"],
+		"moves":[
+			"Hydro Pump",
+			"Bounce",
+			"Celebrate",
+			"Flail",
+			"Happy Hour",
+			"Splash",
+			"Tackle"
+		]
 	}
 }
