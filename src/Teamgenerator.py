@@ -71,11 +71,19 @@ def fullrandom():
     ability = temp["ability"]
     item = temp["item"]
     nature = temp["nature"]
+    ev = ["252 HP","252 Atk","252 Def","252 SpA","252 SpD","252 Spe"]
     mons = []
     for x in range(0, 6):
         mons.append({})
     for x in mons:
-        x["ev"] = "252 HP / 252 Def / 252 SpD / 252 Spe"
+        firstev = True
+        for y in ev:
+            if randint(0,1) == 1:
+                if firstev:
+                    firstev = False
+                    x["ev"] = y
+                else:
+                    x["ev"] = x["ev"] + " / " + y
         x["name"] = pkmn[randint(0, len(pkmn) - 1)]
         pkmn.remove(x["name"])
         x["nature"] = nature[randint(0, len(nature) - 1)]
