@@ -710,22 +710,51 @@
 		},
 		
 		{
-			"name":"Tapu Bulu",
+			"name":"Tapu-Bulu",
 			"sets":[
 				{
-					"item":"",
-					"tags":[],
-					"ability":"",
-					"level":0,
-					"ev":"",
-					"nature":"",
+					"item":"Choice Band",
+					"tags":["choice","ou","mtgrass","mtfairy"],
+					"ability":"Grassy Surge",
+					"level":70,
+					"ev":"252 HP / 252 Atk / 4 SpD",
+					"nature":"Adamant",
 					"iv":"",
 					"movesets":[
 						[
-							"",
-							"",
-							"",
-							""
+							"Horn Leech",
+							"Superpower",
+							"Megahorn",
+							"Zen Headbutt"
+						],
+						[
+							"Horn Leech",
+							"Superpower",
+							"Megahorn",
+							"Stone Edge"
+						]
+					]
+				},
+				{
+					"item":"Choice Band",
+					"tags":["choice","ou","mtgrass","mtfairy"],
+					"ability":"Grassy Surge",
+					"level":70,
+					"ev":"252 HP / 252 Atk / 4 SpD",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Horn Leech",
+							"Superpower",
+							"Megahorn",
+							"Zen Headbutt"
+						],
+						[
+							"Horn Leech",
+							"Superpower",
+							"Megahorn",
+							"Stone Edge"
 						]
 					]
 				}

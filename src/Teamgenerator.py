@@ -77,6 +77,7 @@ def fullrandom():
         mons.append({})
     for x in mons:
         firstev = True
+        x["ev"] = ""
         for y in ev:
             if randint(0,1) == 1:
                 if firstev:
