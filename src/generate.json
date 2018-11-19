@@ -736,25 +736,31 @@
 					]
 				},
 				{
-					"item":"Choice Band",
-					"tags":["choice","ou","mtgrass","mtfairy"],
+					"item":"Leftovers",
+					"tags":["ou","mtgrass","mtfairy"],
 					"ability":"Grassy Surge",
 					"level":70,
-					"ev":"252 HP / 252 Atk / 4 SpD",
+					"ev":"252 HP / 4 Def / 252 SpD",
 					"nature":"Adamant",
 					"iv":"",
 					"movesets":[
 						[
 							"Horn Leech",
+							"Swords Dance",
 							"Superpower",
-							"Megahorn",
-							"Zen Headbutt"
+							"Synthesis"
 						],
 						[
 							"Horn Leech",
+							"Bulk Up",
 							"Superpower",
-							"Megahorn",
-							"Stone Edge"
+							"Synthesis"
+						],
+						[
+							"Zen Headbutt",
+							"Substitute",
+							"Swords Dance",
+							"Horn Leech"
 						]
 					]
 				}
