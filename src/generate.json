@@ -765,6 +765,29 @@
 					]
 				}
 			]
+		},
+		
+		{
+			"name":"Tornadus-T",
+			"sets":[
+				{
+					"item":"Flynium Z",
+					"tags":[],
+					"ability":"",
+					"level":0,
+					"ev":"",
+					"nature":"",
+					"iv":"",
+					"movesets":[
+						[
+							"",
+							"",
+							"",
+							""
+						]
+					]
+				}
+			]
 		}
 
   	],
