@@ -13,8 +13,4 @@ resources/
 
 \.gitignore
 
-*.jar
-
-*.java
-
 src/logs/

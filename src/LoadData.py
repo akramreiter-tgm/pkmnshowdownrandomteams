@@ -7,13 +7,14 @@ papiurl="https://pokeapi.co/api/v2/pokemon/%s/"
 maxrequests=1000
 specialforms=[
 			"deoxys-attack","deoxys-defense","deoxys-speed",
-			"diglett-alola","dugtrio-alola","exeggutor-alola","geodude-alola","grimer-alola","golem-alola","graveler-alola","marowak-alola","muk-alola","raticate-alola","rattata-alola","ninetales-alola","sandshrew-alola","vulpix-alola","sandslash-alola",
+			"diglett-alola","dugtrio-alola","exeggutor-alola","geodude-alola","grimer-alola","golem-alola","graveler-alola","marowak-alola","muk-alola","raticate-alola","rattata-alola","raichu-alola","ninetales-alola","sandshrew-alola","vulpix-alola","sandslash-alola",
 			"tornadus-therian","landorus-therian","thundurus-therian",
 			"hoopa-unbound",
 			"keldeo-resolute",
 			"kyurem-black","kyurem-white",
 			"oricorio-pau","oricorio-pom-pom","oricorio-sensu",
-			"lycanroc-dusk","lycanroc-midnight" #lycanroc-dusk not implemented yet.
+			"lycanroc-dusk","lycanroc-midnight",
+			"necrozma-dawn-wing","necrozma-dusk-mane"
 			]
 
 def reassemble():
@@ -56,10 +57,19 @@ def reassemble():
 				x[str(lx)]['abil'].append(n['ability']['name'])
 			for n in jout['moves']:
 				x[str(lx)]['moves'].append(n['move']['name'])
-			print("Done: %s\n"%specialforms[i])
+			print("Done: %s"%specialforms[i])
 		except:
-			print("ERROR at %s\n"%specialforms[i])
+			print("ERROR at %s"%specialforms[i])
 		lx+=1
+	with open("specialitems.json","r") as specialfile:
+		specialitems=json.load(specialfile)
+		
+	for i in range(1,len(x)):
+		if x[str(i)]['name'] in specialitems:
+			for n in specialitems[x[str(i)]['name']]:
+				x[str(i)]['items'].append(n)
+				print("Item for "+x[str(i)]['name']+" loaded: "+n)
+	
 	with open("temp.json","w") as outfile:
 		outfile.write(json.dumps(x, indent=4, sort_keys=True))
 		

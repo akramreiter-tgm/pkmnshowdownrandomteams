@@ -22,8 +22,10 @@ parser.add_argument("-lr", "--legitrandom",
 args = parser.parse_args()
 
 def log(tolog):
-	datetoday=time.strftime("%Y%m%d-%H%M%S")	
-	with open("errorlog_%s"%datetoday,"a") as outfile:
+	datetoday=time.strftime("%Y%m%d%H%M%S")
+	if not os.path.exists("logs"):
+		os.makedirs("logs")
+	with open("logs/errorlog_%s.log"%datetoday,"a") as outfile:
 		outfile.write("%s"%(tolog))
 		exit(0)
 
