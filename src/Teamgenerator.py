@@ -18,6 +18,21 @@ parser.add_argument("-f", "--fullrandom",
 parser.add_argument("-lr", "--legitrandom",
 					help="Legit random teams.",
 					type=bool, required=False, default=False, nargs='?', const=True)
+parser.add_argument("-sr", "--structuredrandom",
+					help="Random teams with preset movesets",
+					type=bool, required=False, default=False, nargs='?', const=True)
+parser.add_argument("-srm", "--srmega",
+					help="Limits amount of Mega evolutions in -sr teams",
+					type=int, required=False, default=1, nargs='?', const=True)
+parser.add_argument("-srz", "--srzmove",
+					help="Limits amount of Z moves in -sr teams",
+					type=int, required=False, default=1, nargs='?', const=True)
+parser.add_argument("-src", "--srchoice",
+					help="Limits amount of choice items in -sr teams",
+					type=int, required=False, default=1, nargs='?', const=True)
+parser.add_argument("-srut", "--sruniquetypes",
+					help="Every mon in the team has an unique type",
+					type=bool, required=False, default=False, nargs='?', const=True)
 
 args = parser.parse_args()
 
@@ -194,31 +209,59 @@ def legitrandom():
 		writeoutput(mons, "balanced randomized")
 		
 		
-def alexrandom():
+def structuredrandom(zmons = 1, megamons = 1, choice = 1, uniquetypes = False):
 	"""
-	TODO: Tell me Alex ~~~
+	TODO: Implement uniquetypes
 	"""
-	"""
-	with open("generate.json") as source:
+	with open("structuredsets.json") as source:
 		pkmn = json.load(source)["pkmn"]
 
 	print(pkmn)
-	temp = {}
-	temp["name"] = pkmn[0]["name"]
-	setnr = 1
-	movenr = 1
-	temp["item"] = pkmn[0]["sets"][setnr]["item"]
-	temp["ability"] = pkmn[0]["sets"][setnr]["ability"]
-	temp["level"] = pkmn[0]["sets"][setnr]["level"]
-	temp["ev"] = pkmn[0]["sets"][setnr]["ev"]
-	temp["nature"] = pkmn[0]["sets"][setnr]["nature"]
-	temp["iv"] = pkmn[0]["sets"][setnr]["iv"]
-	temp["moves"] = pkmn[0]["sets"][setnr]["movesets"][movenr]
+	temp = []
+	for x in range(0,6):
+		temp.append({})
+	for x in temp:
+		tmon = pkmn[randint(0,len(pkmn) - 1)]
+		x["name"] = tmon["name"]
+		while True:
+			sets = []
+			for x in range(0, len(tmon["sets"])):
+				for y in range(0, tmon["sets"][x]["weight"]):
+					sets.append(x)
+			print(sets)
+			setnr = sets[randint(0, len(sets) - 1)]
+			set = tmon["sets"][setnr]
+			if "z" in set["tags"]:
+				if (zmons == 0):
+					tmon["sets"].remove(set)
+					continue
+				else:
+					zmons -= 1
+			if "mega" in set["tags"]:
+				if (megamons == 0):
+					tmon["sets"].remove(set)
+					continue
+				else:
+					megamons -= 1
+			if "choice" in set["tags"]:
+				if (choice == 0):
+					tmon["sets"].remove(set)
+					continue
+				else:
+					choice -= 1
+
+			x["item"] = set["item"]
+			break
+
+		if len(tmon["group"]) > 0:
+			for mon in pkmn:
+				if mon["group"] == tmon["group"]:
+					pkmn.remove(mon)
+
 
 	for x in pkmn:
 		print(x)
-	printoutput(temp)
-	"""
+	# printoutput(temp)
 	pass
 
 
@@ -230,6 +273,8 @@ def generateteams():
 		fullrandom()
 	if args.legitrandom:
 		legitrandom()
+	if args.structeredrandom:
+		structuredrandom(args.srzmove, args.srmega)
 
 
 if __name__ == '__main__':
