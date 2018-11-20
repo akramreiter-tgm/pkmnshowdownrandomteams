@@ -2,9 +2,11 @@
     "pkmn": [
       	{
       		"name":"Landorus-Therian",
+			"group":"Landorus",
       		"sets": [
 				{
 					"item":"Choice Scarf",
+					"weight":2,
 					"tags":["ou","choice"],
 					"ability":"Intimidate",
 					"level":70,
@@ -27,13 +29,14 @@
 						[
               				"Earthquake",
               				"U-turn",
-              				"Hidden Power [Ice]",
+              				"Hidden Power Ice",
               				"Defog"
             			]
           			]
 				},
 				{
           			"item":"Rocky Helmet",
+					"weight":3,
 				  	"tags":["ou"],
 				  	"ability":"Intimidate",
 				  	"level":70,
@@ -43,13 +46,13 @@
 				  	"movesets":[
             			[
 						  	"Earthquake",
-						  	"Hidden Power [Ice]",
+						  	"Hidden Power Ice",
 							"Stealth Rock",
 						  	"U-turn"
 						],
 						[
 					  		"Earthquake",
-					  		"Hidden Power [Ice]",
+					  		"Hidden Power Ice",
 					  		"Defog",
 					  		"U-turn"
             			]
@@ -57,6 +60,7 @@
 				},
 				{
 				  	"item":"Leftovers",
+					"weight":2,
 				  	"tags":["ou"],
 				  	"ability":"Intimidate",
 				  	"level":70,
@@ -66,13 +70,13 @@
 				  	"movesets":[
             			[
               				"Earthquake",
-						  	"Hidden Power [Ice]",
+						  	"Hidden Power Ice",
 							"Stealth Rock",
 						  	"U-turn"
 						],
 						[
 						  	"Earthquake",
-						  	"Hidden Power [Ice]",
+						  	"Hidden Power Ice",
 						  	"Defog",
 						  	"U-turn"
             			]
@@ -80,6 +84,7 @@
 				},
 				{
           			"item":"Focus Sash",
+					"weight":1,
           			"tags":["ou"],
           			"ability":"Intimidate",
 		  			"level":70,
@@ -109,6 +114,7 @@
 				},
 				{
 				  	"item":"Flyinium Z",
+					"weight":1,
 				  	"tags":["z","ou","mtflying","mtground"],
 					"ability":"Intimidate",
 				  	"level":70,
@@ -126,6 +132,7 @@
 				},
 				{
 				  	"item":"Rockium Z",
+					"weight":1,
 				  	"tags":["z","ou","mtflying","mtground"],
 				  	"ability":"Intimidate",
 				  	"level":70,
@@ -146,9 +153,11 @@
 	
 		{
       		"name":"Heatran",
+			"group":"",
       		"sets":[
 				{
 				  	"item":"Firium Z",
+					"weight":1,
 				 	"tags":["z","ou","mtflying","mtground"],
 				  	"ability":"",
 				  	"level":70,
@@ -172,6 +181,7 @@
 				},
 				{
 				  	"item":"Groundium Z",
+					"weight":1,
 				  	"tags":["z","ou","mtflying","mtground"],
 				  	"ability":"",
 				  	"level":70,
@@ -195,6 +205,7 @@
         		},
 				{
 				  	"item":"Leftovers",
+					"weight":2,
 				  	"tags":["ou","mtsteel","mtfire"],
 				  	"ability":"",
 				  	"level":70,
@@ -218,6 +229,7 @@
         		},
 				{
 				  	"item":"Air Balloon",
+					"weight":2,
 				  	"tags":["ou","mtsteel","mtfire"],
 				  	"ability":"",
 				  	"level":70,
@@ -243,9 +255,11 @@
     	},
 		{
 			"name":"Alakazam",
+			"group":"",
 			"sets":[
 				{
 					"item":"Alakazite",
+					"weight":3,
 					"tags":["mega","ou","mtpsychic"],
 					"ability":"Magic Guard",
 					"level":70,
@@ -293,6 +307,7 @@
 				},
 				{
 					"item":"Life Orb",
+					"weight":1,
 					"tags":["ou","mtpsychic"],
 					"ability":"Magic Guard",
 					"level":70,
@@ -331,9 +346,11 @@
 		
 		{
 			"name":"Ferrothorn",
+			"group":"",
 			"sets":[
 				{
 					"item":"Leftovers",
+					"weight":1,
 					"tags":["ou","setup","mtsteel","mtgrass"],
 					"ability":"Iron Barbs",
 					"level":70,
@@ -372,9 +389,11 @@
 		
 		{
 			"name":"Greninja",
+			"group":"",
 			"sets":[
 				{
 					"item":"Focus Sash",
+					"weight":1,
 					"tags":["ou","setup"],
 					"ability":"Protean",
 					"level":70,
@@ -392,7 +411,8 @@
 				},
 				{
 					"item":"Choice Scarf",
-					"tags":["ou"],
+					"weight":2,
+					"tags":["ou","choice"],
 					"ability":"Protean",
 					"level":70,
 					"ev":"176 Atk / 80 SpA / 252 Spe",
@@ -409,6 +429,7 @@
 				},
 				{
 					"item":"Fightinium Z",
+					"weight":1,
 					"tags":["ou","z"],
 					"ability":"Protean",
 					"level":70,
@@ -432,6 +453,7 @@
 				},
 				{
 					"item":"Waterium Z",
+					"weight":1,
 					"tags":["ou","z"],
 					"ability":"Protean",
 					"level":70,
@@ -442,13 +464,14 @@
 						[
 							"Hydro Pump",
 							"U-turn",
-							"Hidden Power [Fire]",
+							"Hidden Power Fire",
 							"Ice Beam"
 						]
 					]
 				},
 				{
 					"item":"Life Orb",
+					"weight":2,
 					"tags":["ou"],
 					"ability":"Protean",
 					"level":70,
@@ -472,6 +495,7 @@
 				},
 				{
 					"item":"Life Orb",
+					"weight":3,
 					"tags":["ou","mtdark","mtwater"],
 					"ability":"Battle Bond",
 					"level":70,
@@ -495,7 +519,8 @@
 				},
 				{
 					"item":"Choice Specs",
-					"tags":["ou","mtdark","mtwater"],
+					"weight":1,
+					"tags":["ou","mtdark","mtwater","choice"],
 					"ability":"Battle Bond",
 					"level":70,
 					"ev":"4 HP / 252 SpA / 252 Spe",
@@ -521,9 +546,11 @@
 		
 		{
 			"name":"Mawile",
+			"group":"",
 			"sets":[
 				{
 					"item":"Mawilite",
+					"weight":3,
 					"tags":["ou","mega","mtfairy","mtsteel"],
 					"ability":"Intimidate",
 					"level":70,
@@ -553,6 +580,7 @@
 				},
 				{
 					"item":"Life Orb",
+					"weight":1,
 					"tags":["pu","mtfairy","mtsteel"],
 					"ability":"Sheer Force",
 					"level":78,
@@ -570,6 +598,7 @@
 				},
 				{
 					"item":"Rocky Helmet",
+					"weight":1,
 					"tags":["pu","mtfairy","mtsteel"],
 					"ability":"Intimidate",
 					"level":78,
@@ -596,9 +625,11 @@
 		
 		{
 			"name":"Magearna",
+			"group":"",
 			"sets":[
 				{
 					"item":"Fairium Z",
+					"weight":2,
 					"tags":["ou","z","mtfairy","mtsteel"],
 					"ability":"Soul-Heart",
 					"level":70,
@@ -628,6 +659,7 @@
 				},
 				{
 					"item":"Assault Vest",
+					"weight":1,
 					"tags":["ou","mtfairy","mtsteel"],
 					"ability":"Soul-Heart",
 					"level":70,
@@ -644,7 +676,8 @@
 					]
 				},
 				{
-					"item":"Assault Vest",
+					"item":"Aguav Berry",
+					"weight":1,
 					"tags":["ou","mtfairy","mtsteel"],
 					"ability":"Soul-Heart",
 					"level":70,
@@ -665,9 +698,11 @@
 		
 		{
 			"name":"Tangrowth",
+			"group":"",
 			"sets":[
 				{
 					"item":"Assault Vest",
+					"weight":1,
 					"tags":["ou","mtgrass"],
 					"ability":"Regenerator",
 					"level":70,
@@ -678,19 +713,20 @@
 						[
 							"Giga Drain",
 							"Knock Off",
-							"Hidden Power [Ice]",
+							"Hidden Power Ice",
 							"Earthquake"
 						],
 						[
 							"Giga Drain",
 							"Knock Off",
-							"Hidden Power [Ice]",
+							"Hidden Power Ice",
 							"Sludge Bomb"
 						]
 					]
 				},
 				{
 					"item":"Rocky Helmet",
+					"weight":2,
 					"tags":["ou","mtgrass"],
 					"ability":"Regenerator",
 					"level":70,
@@ -711,9 +747,11 @@
 		
 		{
 			"name":"Tapu-Bulu",
+			"group":"",
 			"sets":[
 				{
 					"item":"Choice Band",
+					"weight":1,
 					"tags":["choice","ou","mtgrass","mtfairy"],
 					"ability":"Grassy Surge",
 					"level":70,
@@ -737,6 +775,7 @@
 				},
 				{
 					"item":"Leftovers",
+					"weight":2,
 					"tags":["ou","mtgrass","mtfairy"],
 					"ability":"Grassy Surge",
 					"level":70,
@@ -769,9 +808,11 @@
 		
 		{
 			"name":"Tornadus-T",
+			"group":"",
 			"sets":[
 				{
 					"item":"Flynium Z",
+					"weight":1,
 					"tags":["ou","z","mtflying"],
 					"ability":"Regenerator",
 					"level":70,
@@ -795,6 +836,7 @@
 				},
 				{
 					"item":"Rocky Helmet",
+					"weight":1,
 					"tags":["ou","mtflying"],
 					"ability":"Regenerator",
 					"level":70,
@@ -821,6 +863,7 @@
 		
 		{
 			"name":"Toxapex",
+			"group":"",
 			"sets":[
 				{
 					"item":"Black Sludge",
@@ -850,9 +893,11 @@
 		
 		{
 			"name":"Zygarde",
+			"group":"Zygarde",
 			"sets":[
 				{
 					"item":"Choice Band",
+					"weight":1,
 					"tags":["ou","mtground","mtdragon","choice"],
 					"ability":"Aura Break",
 					"level":70,
@@ -876,6 +921,7 @@
 				},
 				{
 					"item":"Figy Berry",
+					"weight":3,
 					"tags":["ou","mtground","mtdragon"],
 					"ability":"Aura Break",
 					"level":70,
@@ -893,6 +939,7 @@
 				},
 				{
 					"item":"Dragonium Z",
+					"weight":1,
 					"tags":["ou","mtground","mtdragon","z"],
 					"ability":"Aura Break",
 					"level":70,
@@ -910,6 +957,7 @@
 				},
 				{
 					"item":"Leftovers",
+					"weight":2,
 					"tags":["ou","mtground","mtdragon"],
 					"ability":"Aura Break",
 					"level":70,
@@ -927,6 +975,7 @@
 				},
 				{
 					"item":"Weakness Policy",
+					"weight":1,
 					"tags":["ou","mtground","mtdragon"],
 					"ability":"Aura Break",
 					"level":70,
@@ -950,8 +999,9 @@
 				},
 				{
 					"item":"Leftovers",
+					"weight":2,
 					"tags":["uber","mtground","mtdragon"],
-					"ability":"Aura Break",
+					"ability":"Power Construct",
 					"level":68,
 					"ev":"4 HP / 252 Atk / 252 Spe",
 					"nature":"Adamant",
@@ -973,8 +1023,9 @@
 				},
 				{
 					"item":"Leftovers",
+					"weight":2,
 					"tags":["uber","mtground","mtdragon"],
-					"ability":"Aura Break",
+					"ability":"Power Construct",
 					"level":68,
 					"ev":"252 HP / 252 Def / 4 SpD",
 					"nature":"Impish",
@@ -989,6 +1040,996 @@
 					]
 				}
 			]
+		},
+		
+		{
+			"name":"Celesteela",
+			"group":"",
+			"sets":[
+				{
+					"item":"Leftovers",
+					"weight":3,
+					"tags":["ou","ub","mtflying","mtsteel"],
+					"ability":"Beast Boost",
+					"level":70,
+					"ev":"248 HP / 104 Def / 156 SpD",
+					"nature":"Relaxed",
+					"iv":"",
+					"movesets":[
+						[
+							"Heavy Slam",
+							"Flamethrower",
+							"Leech Seed",
+							"Protect"
+						]
+					]
+				},
+				{
+					"item":"Sitrus Berry",
+					"weight":1,
+					"tags":["ou","ub","mtflying","mtsteel"],
+					"ability":"Beast Boost",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Heavy Slam",
+							"Earthquake",
+							"Autotomize",
+							"Acrobatics"
+						]
+					]
+				},
+				{
+					"item":"Aguav Berry",
+					"weight":1,
+					"tags":["ou","ub","mtflying","mtsteel"],
+					"ability":"Beast Boost",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Modest",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Autotomize",
+							"Flamethrower",
+							"Air Slash",
+							"Flash Cannon"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Clefable",
+			"group":"",
+			"sets":[
+				{
+					"item":"Leftovers",
+					"weight":2,
+					"tags":["ou","mtfairy"],
+					"ability":"Magic Guard",
+					"level":70,
+					"ev":"252 HP / 252 Def / 4 SpD",
+					"nature":"Bold",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Protect",
+							"Stealth Rock",
+							"Moonblast",
+							"Wish"
+						],
+						[
+							"Soft-Boiled",
+							"Stealth Rock",
+							"Moonblast",
+							"Wish"
+						]
+					]
+				},
+				{
+					"item":"Leftovers",
+					"weight":1,
+					"tags":["ou","mtfairy"],
+					"ability":"Magic Guard",
+					"level":70,
+					"ev":"252 HP / 252 Def / 4 SpD",
+					"nature":"Bold",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Wish",
+							"Cosmic Power",
+							"Stored Power",
+							"Moonblast"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Kartana",
+			"group":"",
+			"sets":[
+				{
+					"item":"Fightinium Z",
+					"weight":1,
+					"tags":["ub","z","mtsteel","mtgrass"],
+					"ability":"Beast Boost",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Swords Dance",
+							"Leaf Blade",
+							"Sacred Sword",
+							"Smart Strike"
+						],
+						[
+							"Swords Dance",
+							"Leaf Blade",
+							"Sacred Sword",
+							"Knock Off"
+						]
+					]
+				},
+				{
+					"item":"Life Orb",
+					"weight":4,
+					"tags":["ub","mtsteel","mtgrass"],
+					"ability":"Beast Boost",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Swords Dance",
+							"Leaf Blade",
+							"Sacred Sword",
+							"Smart Strike"
+						],
+						[
+							"Swords Dance",
+							"Leaf Blade",
+							"Sacred Sword",
+							"Knock Off"
+						]
+					]
+				},
+				{
+					"item":"Focus Sash",
+					"weight":1,
+					"tags":["ub","mtsteel","mtgrass"],
+					"ability":"Beast Boost",
+					"level":70,
+					"ev":"4 HP / 252 SpD / 252 Spe",
+					"nature":"Timid",
+					"iv":"19 Atk",
+					"movesets":[
+						[
+							"Swords Dance",
+							"Leaf Blade",
+							"Sacred Sword",
+							"Smart Strike"
+						],
+						[
+							"Swords Dance",
+							"Leaf Blade",
+							"Sacred Sword",
+							"Knock Off"
+						]
+					]
+				},
+				{
+					"item":"Choice Band",
+					"weight":1,
+					"tags":["ub","choice","mtsteel","mtgrass"],
+					"ability":"Beast Boost",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Knock Off",
+							"Leaf Blade",
+							"Sacred Sword",
+							"Smart Strike"
+						]
+					]
+				},
+				{
+					"item":"Choice Scarf",
+					"weight":2,
+					"tags":["ub","choice","mtsteel","mtgrass"],
+					"ability":"Beast Boost",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Knock Off",
+							"Leaf Blade",
+							"Sacred Sword",
+							"Smart Strike"
+						],
+						[
+							"Knock Off",
+							"Leaf Blade",
+							"Sacred Sword",
+							"Defog"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Magnezone",
+			"group":"",
+			"sets":[
+				{
+					"item":"Assault Vest",
+					"weight":1,
+					"tags":["ou","mtsteel","mtelectric"],
+					"ability":"Magnet Pull",
+					"level":70,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Thunderbolt",
+							"Hidden Power Fire",
+							"Volt Switch",
+							"Flash Cannon"
+						]
+					]
+				},
+				{
+					"item":"Choice Scarf",
+					"weight":1,
+					"tags":["ou","mtsteel","mtelectric","choice"],
+					"ability":"Magnet Pull",
+					"level":70,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Thunderbolt",
+							"Hidden Power Fire",
+							"Volt Switch",
+							"Flash Cannon"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Medicham",
+			"group":"",
+			"sets":[
+				{
+					"item":"Medichamite",
+					"weight":4,
+					"tags":["ou","mega","mtfighting","mtpsychic"],
+					"ability":"Pure Power",
+					"level":70,
+					"ev":"252 Atk / 4 Def / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Fake Out",
+							"High Jump Kick",
+							"Ice Punch",
+							"Zen Headbutt"
+						],
+						[
+							"Fake Out",
+							"High Jump Kick",
+							"Bullet Punch",
+							"Zen Headbutt"
+						]
+					]
+				},
+				{
+					"item":"Life Orb",
+					"weight":1,
+					"tags":["nu","mtfighting","mtpsychic"],
+					"ability":"Pure Power",
+					"level":76,
+					"ev":"252 Atk / 4 Def / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Fake Out",
+							"High Jump Kick",
+							"Thunder Punch",
+							"Bulk Up"
+						],
+						[
+							"Bulk Up",
+							"High Jump Kick",
+							"Bullet Punch",
+							"Zen Headbutt"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Tapu-Lele",
+			"group":"",
+			"sets":[
+				{
+					"item":"Life Orb",
+					"weight":1,
+					"tags":["ou","mtpsychic","mtfairy"],
+					"ability":"Psychic Surge",
+					"level":70,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Psychic",
+							"Moonblast",
+							"Hidden Power Fire",
+							"Taunt"
+						],
+						[
+							"Psychic",
+							"Moonblast",
+							"Hidden Power Fire",
+							"Calm Mind"
+						]
+					]
+				},
+				{
+					"item":"Fightinium Z",
+					"weight":2,
+					"tags":["ou","mtpsychic","mtfairy","z"],
+					"ability":"Psychic Surge",
+					"level":70,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Psychic",
+							"Moonblast",
+							"Focus Blast",
+							"Taunt"
+						],
+						[
+							"Psychic",
+							"Moonblast",
+							"Focus Blast",
+							"Calm Mind"
+						]
+					]
+				},
+				{
+					"item":"Choice Scarf",
+					"weight":2,
+					"tags":["ou","mtpsychic","mtfairy","choice"],
+					"ability":"Psychic Surge",
+					"level":70,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Psychic",
+							"Moonblast",
+							"Focus Blast",
+							"Hidden Power Fire"
+						],
+						[
+							"Psychic",
+							"Moonblast",
+							"Thunderbolt",
+							"Hidden Power Fire"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Tyranitar",
+			"group":"",
+			"sets":[
+				{
+					"item":"Tyranitarite",
+					"weight":3,
+					"tags":["sandstorm","mtrock","mtdark","ou","mega"],
+					"ability":"Sand Stream",
+					"level":70,
+					"ev":"252 HP / 252 Atk / 4 SpD",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Stealth Rock",
+							"Fire Punch",
+							"Pursuit",
+							"Stone Edge"
+						],
+						[
+							"Stealth Rock",
+							"Ice Punch",
+							"Pursuit",
+							"Stone Edge"
+						],
+						[
+							"Stealth Rock",
+							"Fire Punch",
+							"Pursuit",
+							"Earthquake"
+						],
+						[
+							"Stealth Rock",
+							"Ice Punch",
+							"Pursuit",
+							"Earthquake"
+						]
+					]
+				},
+				{
+					"item":"Tyranitarite",
+					"weight":2,
+					"tags":["sandstorm","mtrock","mtdark","ou","mega"],
+					"ability":"Sand Stream",
+					"level":70,
+					"ev":"252 Atk / 4 SpD / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Dragon Dance",
+							"Fire Punch",
+							"Ice Punch",
+							"Stone Edge"
+						],
+						[
+							"Dragon Dance",
+							"Earthquake",
+							"Ice Punch",
+							"Stone Edge"
+						],
+						[
+							"Dragon Dance",
+							"Crunch",
+							"Ice Punch",
+							"Stone Edge"
+						]
+					]
+				},
+				{
+					"item":"Smooth Rock",
+					"weight":1,
+					"tags":["sandstorm","mtrock","mtdark","ou",],
+					"ability":"Sand Stream",
+					"level":70,
+					"ev":"252 Atk / 4 SpD / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Dragon Dance",
+							"Fire Punch",
+							"Ice Punch",
+							"Stone Edge"
+						],
+						[
+							"Dragon Dance",
+							"Earthquake",
+							"Ice Punch",
+							"Stone Edge"
+						],
+						[
+							"Dragon Dance",
+							"Crunch",
+							"Ice Punch",
+							"Stone Edge"
+						]
+					]
+				},
+				{
+					"item":"Choice Band",
+					"weight":1,
+					"tags":["sandstorm","mtrock","mtdark","ou","choice"],
+					"ability":"Sand Stream",
+					"level":70,
+					"ev":"252 Atk / 4 SpD / 252 Spe",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Pursuit",
+							"Fire Punch",
+							"Ice Punch",
+							"Stone Edge"
+						],
+						[
+							"Pursuit",
+							"Crunch",
+							"Ice Punch",
+							"Stone Edge"
+						],
+						[
+							"Pursuit",
+							"Earthquake",
+							"Ice Punch",
+							"Stone Edge"
+						]
+					]
+				},
+				{
+					"item":"Assault Vest",
+					"weight":1,
+					"tags":["sandstorm","mtrock","mtdark","ou"],
+					"ability":"Sand Stream",
+					"level":70,
+					"ev":"252 HP / 4 Def / 252 SpD",
+					"nature":"Careful",
+					"iv":"",
+					"movesets":[
+						[
+							"Pursuit",
+							"Crunch",
+							"Earthquake",
+							"Rock Slide"
+						],
+						[
+							"Pursuit",
+							"Fire Punch",
+							"Earthquake",
+							"Rock Slide"
+						],
+						[
+							"Pursuit",
+							"Ice Punch",
+							"Earthquake",
+							"Rock Slide"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name":"Volcarona",
+			"group":"",
+			"sets":[
+				{
+					"item":"Focus Sash",
+					"weight":2,
+					"tags":["ou","mtbug","mtfire"],
+					"ability":"Swarm",
+					"level":70,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"",
+					"movesets":[
+						[
+							"Quiver Dance",
+							"Fiery Dance",
+							"Bug Buzz",
+							"Giga Drain"
+						],
+						[
+							"Quiver Dance",
+							"Fiery Dance",
+							"Bug Buzz",
+							"Psychic"
+						]
+					]
+				},
+				{
+					"item":"Buginium Z",
+					"weight":1,
+					"tags":["ou","mtbug","mtfire","z"],
+					"ability":"Swarm",
+					"level":70,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"",
+					"movesets":[
+						[
+							"Quiver Dance",
+							"Fiery Dance",
+							"Bug Buzz",
+							"Giga Drain"
+						],
+						[
+							"Quiver Dance",
+							"Fiery Dance",
+							"Bug Buzz",
+							"Psychic"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Chansey",
+			"group":"",
+			"sets":[
+				{
+					"item":"Eviolite",
+					"weight":1,
+					"tags":["ou","mtnormal"],
+					"ability":"Natural Cure",
+					"level":70,
+					"ev":"252 HP / 252 Def / 4 SpD",
+					"nature":"Bold",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Seismic Toss",
+							"Toxic",
+							"Stealth Rock",
+							"Soft Boiled"
+						],
+						[
+							"Seismic Toss",
+							"Toxic",
+							"Heal Bell",
+							"Soft Boiled"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Diancie",
+			"group":"",
+			"sets":[
+				{
+					"item":"Diancite",
+					"weight":3,
+					"tags":["ou","mtfairy","mtrock","mega"],
+					"ability":"Clear Body",
+					"level":70,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Hasty",
+					"iv":"",
+					"movesets":[
+						[
+							"Moonblast",
+							"Diamond Storms",
+							"Earth Power",
+							"Protect"
+						],
+						[
+							"Moonblast",
+							"Diamond Storms",
+							"Earth Power",
+							"Stealth Rock"
+						]
+					]
+				},
+				{
+					"item":"Leftovers",
+					"weight":1,
+					"tags":["ru","mtfairy","mtrock"],
+					"ability":"Clear Body",
+					"level":74,
+					"ev":"252 HP / 4 Def / 252 SpD",
+					"nature":"Sassy",
+					"iv":"",
+					"movesets":[
+						[
+							"Moonblast",
+							"Diamond Storms",
+							"Stealth Rock",
+							"Toxic"
+						],
+						[
+							"Moonblast",
+							"Diamond Storms",
+							"Stealth Rock",
+							"Heal Bell"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Garchomp",
+			"group":"",
+			"sets":[
+				{
+					"item":"Life Orb",
+					"weight":2,
+					"tags":["ou","mtground","mtdragon"],
+					"ability":"Rough Skin",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Earthquake",
+							"Swords Dance",
+							"Dragon Claw",
+							"Fire Fang"
+						]
+					]
+				},
+				{
+					"item":"Aguav Berry",
+					"weight":2,
+					"tags":["ou","mtground","mtdragon"],
+					"ability":"Rough Skin",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Earthquake",
+							"Swords Dance",
+							"Dragon Claw",
+							"Stealth Rock"
+						]
+					]
+				},
+				{
+					"item":"Dragonium Z",
+					"weight":1,
+					"tags":["ou","mtground","mtdragon","z"],
+					"ability":"Rough Skin",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Earthquake",
+							"Swords Dance",
+							"Outrage",
+							"Stealth Rock"
+						]
+					]
+				},
+				{
+					"item":"Salac Berry",
+					"weight":1,
+					"tags":["ou","mtground","mtdragon"],
+					"ability":"Rough Skin",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Earthquake",
+							"Swords Dance",
+							"Dragon Claw",
+							"Fire Fang"
+						]
+					]
+				},
+				{
+					"item":"Choice Scarf",
+					"weight":1,
+					"tags":["ou","mtground","mtdragon","choice"],
+					"ability":"Rough Skin",
+					"level":70,
+					"ev":"252 Atk / 4 SpA / 252 Spe",
+					"nature":"Hasty",
+					"iv":"",
+					"movesets":[
+						[
+							"Earthquake",
+							"Fire Fang",
+							"Dragon Claw",
+							"Surf"
+						]
+					]
+				},
+				{
+					"item":"Garchompite",
+					"weight":3,
+					"tags":["ou","mtground","mtdragon","mega","sandstorm"],
+					"ability":"Rough Skin",
+					"level":70,
+					"ev":"252 Atk / 4 SpA / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Earthquake",
+							"Fire Fang",
+							"Dragon Claw",
+							"Swords Dance"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Gliscor",
+			"group":"",
+			"sets":[
+				{
+					"item":"Toxic Orb",
+					"weight":4,
+					"tags":["ou","mtground","mtflying"],
+					"ability":"Poison Heal",
+					"level":70,
+					"ev":"252 HP / 88 Def / 170 SpD",
+					"nature":"Careful",
+					"iv":"",
+					"movesets":[
+						[
+							"Stealth Rock",
+							"Earthquake",
+							"Toxic",
+							"Roost"
+						],
+						[
+							"Defog",
+							"Earthquake",
+							"Knock Off",
+							"Roost"
+						],
+						[
+							"Defog",
+							"Earthquake",
+							"Taunt",
+							"Roost"
+						],
+						[
+							"Swords Dance",
+							"Earthquake",
+							"Facade",
+							"Roost"
+						]
+					]
+				},
+				{
+					"item":"Toxic Orb",
+					"weight":1,
+					"tags":["ou","mtground","mtflying"],
+					"ability":"Poison Heal",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Rock Polish",
+							"Swords Dance",
+							"Earthquake",
+							"Facade"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name":"Kyurem-Black",
+			"group":"Kyurem",
+			"sets":[
+				{
+					"item":"Icium Z",
+					"weight":1,
+					"tags":["ou","mtice","mtdragon","z"],
+					"ability":"Teravolt",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Freeze Shock",
+							"Fusion Bolt",
+							"Dragon Claw",
+							"Iron Head",
+						]
+					]
+				},
+				{
+					"item":"Icium Z",
+					"weight":1,
+					"tags":["ou","mtice","mtdragon","z"],
+					"ability":"Teravolt",
+					"level":70,
+					"ev":"252 Atk / 4 SpA / 252 Spe",
+					"nature":"Naive",
+					"iv":"",
+					"movesets":[
+						[
+							"Freeze Shock",
+							"Fusion Bolt",
+							"Ice Beam",
+							"Earth Power",
+						]
+					]
+				},
+				{
+					"item":"Life Orb",
+					"weight":3,
+					"tags":["ou","mtice","mtdragon"],
+					"ability":"Teravolt",
+					"level":70,
+					"ev":"252 Atk / 4 SpA / 252 Spe",
+					"nature":"Naive",
+					"iv":"",
+					"movesets":[
+						[
+							"Dragon Claw",
+							"Fusion Bolt",
+							"Ice Beam",
+							"Roost",
+						]
+					]
+				},
+				{
+					"item":"Choice Scarf",
+					"weight":2,
+					"tags":["ou","mtice","mtdragon"],
+					"ability":"Teravolt",
+					"level":70,
+					"ev":"252 Atk / 4 SpA / 252 Spe",
+					"nature":"Naive",
+					"iv":"",
+					"movesets":[
+						[
+							"Dragon Claw",
+							"Fusion Bolt",
+							"Ice Beam",
+							"Iron Head",
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Latias",
+			"group":"",
+			"sets":[
+				{
+					"item":"Latiasite",
+					"weight":1,
+					"tags":[],
+					"ability":"",
+					"level":0,
+					"ev":"",
+					"nature":"",
+					"iv":"",
+					"movesets":[
+						[
+							"",
+							"",
+							"",
+							""
+						]
+					]
+				}
+			]
 		}
 
   	],
@@ -997,9 +2038,11 @@
   	"blank set":
 		{
 			"name":"",
+			"group":"",
 			"sets":[
 				{
 					"item":"",
+					"weight":1,
 					"tags":[],
 					"ability":"",
 					"level":0,
