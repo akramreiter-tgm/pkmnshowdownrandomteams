@@ -1523,7 +1523,7 @@
 				{
 					"item":"Smooth Rock",
 					"weight":1,
-					"tags":["sandstorm","mtrock","mtdark","ou",],
+					"tags":["sandstorm","mtrock","mtdark","ou"],
 					"ability":"Sand Stream",
 					"level":70,
 					"ev":"252 Atk / 4 SpD / 252 Spe",
@@ -1946,7 +1946,7 @@
 							"Freeze Shock",
 							"Fusion Bolt",
 							"Dragon Claw",
-							"Iron Head",
+							"Iron Head"
 						]
 					]
 				},
@@ -1964,7 +1964,7 @@
 							"Freeze Shock",
 							"Fusion Bolt",
 							"Ice Beam",
-							"Earth Power",
+							"Earth Power"
 						]
 					]
 				},
@@ -1982,7 +1982,7 @@
 							"Dragon Claw",
 							"Fusion Bolt",
 							"Ice Beam",
-							"Roost",
+							"Roost"
 						]
 					]
 				},
@@ -2000,7 +2000,7 @@
 							"Dragon Claw",
 							"Fusion Bolt",
 							"Ice Beam",
-							"Iron Head",
+							"Iron Head"
 						]
 					]
 				}
@@ -2144,7 +2144,7 @@
 					]
 				}
 			]
-		}
+		},
 		
 		{
 			"name":"Latios",

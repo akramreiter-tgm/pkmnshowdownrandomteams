@@ -64,7 +64,8 @@ def returnoutput(mons):
 				outtext += "- " + x + "\n"
 			outtext += "\n"
 		except Exception as err:
-			log("%s\n}n%s"%(str(mon),str(err)))
+			print("%s\n}n%s"%(str(mon), str(err)))
+
 	return (outtext)
 
 
@@ -211,9 +212,10 @@ def legitrandom():
 		
 def structuredrandom(zmons = 1, megamons = 1, choice = 1, uniquetypes = False):
 	"""
+	Formerly known as AlexRandon
 	TODO: Implement uniquetypes
 	"""
-	with open("structuredsets.json") as source:
+	with open("structeredsets.json","r") as source:
 		pkmn = json.load(source)["pkmn"]
 
 	print(pkmn)
@@ -225,9 +227,9 @@ def structuredrandom(zmons = 1, megamons = 1, choice = 1, uniquetypes = False):
 		x["name"] = tmon["name"]
 		while True:
 			sets = []
-			for x in range(0, len(tmon["sets"])):
-				for y in range(0, tmon["sets"][x]["weight"]):
-					sets.append(x)
+			for y in range(0, len(tmon["sets"])):
+				for z in range(0, tmon["sets"][y]["weight"]):
+					sets.append(y)
 			print(sets)
 			setnr = sets[randint(0, len(sets) - 1)]
 			set = tmon["sets"][setnr]
@@ -250,18 +252,25 @@ def structuredrandom(zmons = 1, megamons = 1, choice = 1, uniquetypes = False):
 				else:
 					choice -= 1
 
+			x["item"] = ""
 			x["item"] = set["item"]
+			x["ability"] = set["ability"]
+			x["level"] = set["level"]
+			x["ev"] = set["ev"]
+			x["iv"] = set["iv"]
+			x["nature"] = set["nature"]
+			x["moves"] = set["movesets"][randint(0, len(set["movesets"]) - 1)]
 			break
 
 		if len(tmon["group"]) > 0:
 			for mon in pkmn:
 				if mon["group"] == tmon["group"]:
 					pkmn.remove(mon)
+		else:
+			pkmn.remove(tmon)
 
-
-	for x in pkmn:
-		print(x)
-	# printoutput(temp)
+	print(temp)
+	print(returnoutput(temp))
 	pass
 
 
@@ -273,7 +282,7 @@ def generateteams():
 		fullrandom()
 	if args.legitrandom:
 		legitrandom()
-	if args.structeredrandom:
+	if args.structuredrandom:
 		structuredrandom(args.srzmove, args.srmega)
 
 
