@@ -2013,19 +2013,576 @@
 			"sets":[
 				{
 					"item":"Latiasite",
+					"weight":5,
+					"tags":["ou","mtpsychic","mtdragon","mega"],
+					"ability":"Levitate",
+					"level":70,
+					"ev":"252 HP / 4 Def / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Calm Mind",
+							"Recover",
+							"Stored Power",
+							"Ice Beam"
+						],
+						[
+							"Calm Mind",
+							"Recover",
+							"Stored Power",
+							"Substitute"
+						]
+					]
+				},
+				{
+					"item":"Dragonium Z",
 					"weight":1,
-					"tags":[],
-					"ability":"",
-					"level":0,
-					"ev":"",
-					"nature":"",
+					"tags":["uu","mtpsychic","mtdragon","z"],
+					"ability":"Levitate",
+					"level":72,
+					"ev":"4 Def / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Calm Mind",
+							"Roost",
+							"Psyshock",
+							"Draco Meteor"
+						],
+						[
+							"Calm Mind",
+							"Roost",
+							"Psychic",
+							"Draco Meteor"
+						]
+					]
+				},
+				{
+					"item":"Choice Scarf",
+					"weight":3,
+					"tags":["uu","mtpsychic","mtdragon","choice"],
+					"ability":"Levitate",
+					"level":72,
+					"ev":"4 Def / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Trick",
+							"Healing Wish",
+							"Psyshock",
+							"Draco Meteor"
+						],
+						[
+							"Trick",
+							"Ice Beam",
+							"Psyshock",
+							"Draco Meteor"
+						],
+						[
+							"Trick",
+							"Thunderbolt",
+							"Psyshock",
+							"Draco Meteor"
+						],
+						[
+							"Trick",
+							"Healing Wish",
+							"Psychic",
+							"Draco Meteor"
+						],
+						[
+							"Trick",
+							"Ice Beam",
+							"Psychic",
+							"Draco Meteor"
+						],
+						[
+							"Trick",
+							"Thunderbolt",
+							"Psychic",
+							"Draco Meteor"
+						]
+					]
+				},
+				{
+					"item":"Life Orb",
+					"weight":1,
+					"tags":["uu","mtpsychic","mtdragon"],
+					"ability":"Levitate",
+					"level":72,
+					"ev":"4 Def / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Defog",
+							"Calm Mind",
+							"Psyshock",
+							"Draco Meteor"
+						],
+						[
+							"Defog",
+							"Calm Mind",
+							"Psychic",
+							"Draco Meteor"
+						],
+						[
+							"Roost",
+							"Calm Mind",
+							"Psyshock",
+							"Draco Meteor"
+						],
+						[
+							"Roost",
+							"Calm Mind",
+							"Psychic",
+							"Draco Meteor"
+						]
+					]
+				}
+			]
+		}
+		
+		{
+			"name":"Latios",
+			"group":"",
+			"sets":[
+				{
+					"item":"Latiosite",
+					"weight":5,
+					"tags":["ou","mtpsychic","mtdragon","mega"],
+					"ability":"Levitate",
+					"level":70,
+					"ev":"252 HP / 4 Def / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Calm Mind",
+							"Recover",
+							"Stored Power",
+							"Ice Beam"
+						],
+						[
+							"Calm Mind",
+							"Recover",
+							"Stored Power",
+							"Substitute"
+						]
+					]
+				},
+				{
+					"item":"Dragonium Z",
+					"weight":1,
+					"tags":["ou","mtpsychic","mtdragon","z"],
+					"ability":"Levitate",
+					"level":72,
+					"ev":"4 Def / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Calm Mind",
+							"Roost",
+							"Psyshock",
+							"Draco Meteor"
+						],
+						[
+							"Calm Mind",
+							"Roost",
+							"Psychic",
+							"Draco Meteor"
+						]
+					]
+				},
+				{
+					"item":"Choice Scarf",
+					"weight":3,
+					"tags":["ou","mtpsychic","mtdragon","choice"],
+					"ability":"Levitate",
+					"level":72,
+					"ev":"4 Def / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Trick",
+							"Healing Wish",
+							"Psyshock",
+							"Draco Meteor"
+						],
+						[
+							"Trick",
+							"Ice Beam",
+							"Psyshock",
+							"Draco Meteor"
+						],
+						[
+							"Trick",
+							"Thunderbolt",
+							"Psyshock",
+							"Draco Meteor"
+						],
+						[
+							"Trick",
+							"Healing Wish",
+							"Psychic",
+							"Draco Meteor"
+						],
+						[
+							"Trick",
+							"Ice Beam",
+							"Psychic",
+							"Draco Meteor"
+						],
+						[
+							"Trick",
+							"Thunderbolt",
+							"Psychic",
+							"Draco Meteor"
+						]
+					]
+				},
+				{
+					"item":"Soul Dew",
+					"weight":1,
+					"tags":["ou","mtpsychic","mtdragon"],
+					"ability":"Levitate",
+					"level":72,
+					"ev":"4 Def / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Defog",
+							"Calm Mind",
+							"Psyshock",
+							"Draco Meteor"
+						],
+						[
+							"Defog",
+							"Calm Mind",
+							"Psychic",
+							"Draco Meteor"
+						],
+						[
+							"Roost",
+							"Calm Mind",
+							"Psyshock",
+							"Draco Meteor"
+						],
+						[
+							"Roost",
+							"Calm Mind",
+							"Psychic",
+							"Draco Meteor"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Reuniclus",
+			"group":"",
+			"sets":[
+				{
+					"item":"Leftovers",
+					"weight":1,
+					"tags":["uu","mtpsychic"],
+					"ability":"Magic Guard",
+					"level":72,
+					"ev":"252 HP / 252 Def / 4 SpD",
+					"nature":"Bold",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Calm Mind",
+							"Psyshock",
+							"Shadow Ball",
+							"Recover"
+						],
+						[
+							"Calm Mind",
+							"Psyshock",
+							"Focus Blast",
+							"Recover"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Rotom-Wash",
+			"group":"",
+			"sets":[
+				{
+					"item":"Wiki Berry",
+					"weight":1,
+					"tags":["ou","mtwater","mtelectric"],
+					"ability":"Levitate",
+					"level":70,
+					"ev":"252 HP / 252 Def / 4 SpD",
+					"nature":"Bold",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Hydro Pump",
+							"Volt Switch",
+							"Pain Split",
+							"Will-O-Wisp"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Scizor",
+			"group":"",
+			"sets":[
+				{
+					"item":"Scizorite",
+					"weight":1,
+					"tags":["ou","mtsteel","mtbug","mega"],
+					"ability":"Light Metal",
+					"level":70,
+					"ev":"252 HP / 252 Def / 4 SpD",
+					"nature":"Impish",
 					"iv":"",
 					"movesets":[
 						[
-							"",
-							"",
-							"",
-							""
+							"Curse",
+							"Bullet Punch",
+							"Roost",
+							"Knock Off"
+						],
+						[
+							"Swords Dance",
+							"Bullet Punch",
+							"Roost",
+							"Knock Off"
+						],
+						[
+							"Defog",
+							"Bullet Punch",
+							"Roost",
+							"U-turn"
+						]
+					]
+				},
+				{
+					"item":"Leftovers",
+					"weight":2,
+					"tags":["uu","mtsteel","mtbug"],
+					"ability":"Technician",
+					"level":72,
+					"ev":"252 HP / 124 Def / 136 SpD",
+					"nature":"Impish",
+					"iv":"",
+					"movesets":[
+						[
+							"Swords Dance",
+							"Bullet Punch",
+							"Roost",
+							"Knock Off"
+						],
+						[
+							"Swords Dance",
+							"Bullet Punch",
+							"Roost",
+							"U-turn"
+						]
+					]
+				},
+				{
+					"item":"Life Orb",
+					"weight":2,
+					"tags":["uu","mtsteel","mtbug"],
+					"ability":"Technician",
+					"level":72,
+					"ev":"252 HP / 252 Atk / 4 SpD",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Swords Dance",
+							"Bullet Punch",
+							"Knock Off",
+							"Quick Attack"
+						]
+					]
+				},
+				{
+					"item":"Choice Band",
+					"weight":1,
+					"tags":["uu","mtsteel","mtbug","choice"],
+					"ability":"Technician",
+					"level":72,
+					"ev":"252 HP / 252 Atk / 4 SpD",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"U-turn",
+							"Bullet Punch",
+							"Pursuit",
+							"Quick Attack"
+						],
+						[
+							"U-turn",
+							"Bullet Punch",
+							"Pursuit",
+							"Superpower"
+						],
+						[
+							"U-turn",
+							"Bullet Punch",
+							"Knock Off",
+							"Quick Attack"
+						],
+						[
+							"U-turn",
+							"Bullet Punch",
+							"Knock Off",
+							"Superpower"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Tapu-Koko",
+			"group":"",
+			"sets":[
+				{
+					"item":"Leftovers",
+					"weight":1,
+					"tags":["ou","mtelectric","mtfairy"],
+					"ability":"Electric Surge",
+					"level":70,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"",
+					"movesets":[
+						[
+							"U-turn",
+							"Thunderbolt",
+							"Roost",
+							"Defog"
+						]
+					]
+				},
+				{
+					"item":"Electrium Z",
+					"weight":1,
+					"tags":["ou","mtelectric","mtfairy","z"],
+					"ability":"Electric Surge",
+					"level":70,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"",
+					"movesets":[
+						[
+							"U-turn",
+							"Thunderbolt",
+							"Roost",
+							"Dazzling Gleam"
+						]
+					]
+				},
+				{
+					"item":"Light Clay",
+					"weight":1,
+					"tags":["ou","mtelectric","mtfairy"],
+					"ability":"Electric Surge",
+					"level":70,
+					"ev":"252 HP / 4 SpD / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"U-turn",
+							"Reflect",
+							"Light Screen",
+							"Taunt"
+						]
+					]
+				},
+				{
+					"item":"Choice Specs",
+					"weight":1,
+					"tags":["ou","mtelectric","mtfairy","choice"],
+					"ability":"Electric Surge",
+					"level":70,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"",
+					"movesets":[
+						[
+							"Volt Switch",
+							"Thunderbolt",
+							"Dazzling Gleam",
+							"Hidden Power Ice"
+						]
+					]
+				},
+				{
+					"item":"Choice Band",
+					"weight":1,
+					"tags":["ou","mtelectric","mtfairy","choice"],
+					"ability":"Electric Surge",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Wild Charge",
+							"U-turn",
+							"Iron Head",
+							"Brave Bird"
+						]
+					]
+				},
+				{
+					"item":"Electrium Z",
+					"weight":1,
+					"tags":["ou","mtelectric","mtfairy","z"],
+					"ability":"Electric Surge",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Wild Charge",
+							"U-turn",
+							"Defog",
+							"Brave Bird"
+						]
+					]
+				},
+				{
+					"item":"Life Orb",
+					"weight":2,
+					"tags":["ou","mtelectric","mtfairy"],
+					"ability":"Electric Surge",
+					"level":70,
+					"ev":"4 Atk / 252 SpA / 252 Spe",
+					"nature":"Naive",
+					"iv":"",
+					"movesets":[
+						[
+							"Hidden Power Ice",
+							"U-turn",
+							"Iron Head",
+							"Thunderbolt"
 						]
 					]
 				}
