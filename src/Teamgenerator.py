@@ -190,11 +190,18 @@ def legitrandom():
 				ev[rng]+=2
 		x["ev"]="%i HP / %i Atk / %i Def / %i SpA / %i SpD / %i Spe" % (ev[0],ev[1],ev[2],ev[3],ev[4],ev[5])
 			
+		used=[]
+		for y in mons:
+			try:
+				used.append(y["name"])
+			except:
+				break
+			
 		exit=False
 		while exit==False:
 			pnr=str(randint(0, len(temp) - 1))
 			for i in mons:
-				if temp[pnr]["name"] not in i.values():
+				if temp[pnr]["name"] not in used:
 					if (temp[pnr]["name"] in whitelist["whitelist"] and (args.legitrandomfullyevolved or args.legitrandomfullyevolvedlegitmoves)) or not (args.legitrandomfullyevolved or args.legitrandomfullyevolvedlegitmoves):
 						x["name"] = temp[pnr]["name"]
 						exit=True
@@ -213,7 +220,7 @@ def legitrandom():
 			else:
 				x["ability"] = ability[randint(0, len(ability) - 1)]
 		except Exception as err:
-			log("Anzahl Ability, Max Index : %i, %i\nPokeset: %s\n\n%s"%(len(ability),len(ability)-1,str(temp[pnr]),str(err)))
+			log("Anzahl Ability, Max Index : %i, %i\nPokeset: %s\n\n%s\n\n%s"%(len(ability),len(ability)-1,str(temp[pnr]),str(err),str(mons)))
 		ability.remove(x["ability"])
 		x["level"] = 0
 		x["iv"] = ""
