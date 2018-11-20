@@ -14,7 +14,12 @@ specialforms=[
 			"kyurem-black","kyurem-white",
 			"oricorio-pau","oricorio-pom-pom","oricorio-sensu",
 			"lycanroc-dusk","lycanroc-midnight",
-			"necrozma-dawn-wing","necrozma-dusk-mane"
+			"necrozma-dawn-wing","necrozma-dusk-mane",
+			"rotom-wash","rotom-heat","rotom-frost","rotom-fan","rotom-mow",
+			"shaymin-sky",
+			"wormadam-sandy","wormadam-trash",
+			"gourgeist-large","gourgeist-small","gourgeist-super",
+			"meowstic-f"
 			]
 
 def reassemble():
