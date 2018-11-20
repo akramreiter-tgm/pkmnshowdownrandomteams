@@ -85,7 +85,7 @@ def returnoutput(mons):
 				outtext += "- " + x + "\n"
 			outtext += "\n"
 		except Exception as err:
-			print("%s\n}n%s"%(str(mon), str(err)))
+			log("%s\n}n%s"%(str(mon), str(err)))
 
 	return (outtext)
 
@@ -201,7 +201,9 @@ def legitrandom():
 		
 		ability=temp[pnr]["abil"]
 		moves=temp[pnr]["moves"]
-		item.append(temp[pnr]["items"])
+		itemtemp=item
+		for i in range(0,len(temp[pnr]["items"])):
+			itemtemp.append(temp[pnr]["items"][i])
 		
 		x["nature"] = nature[randint(0, len(nature) - 1)]
 		

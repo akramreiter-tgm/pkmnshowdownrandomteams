@@ -53,6 +53,7 @@ def reassemble():
 			acturl=papiurl % specialforms[i]
 			res=requests.get(acturl)
 			jout=res.json()
+			test=jout['name']
 			x[str(lx)]={}
 			x[str(lx)]['name']=jout['name']
 			x[str(lx)]['items']=[]
