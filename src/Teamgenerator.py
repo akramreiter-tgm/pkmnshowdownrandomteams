@@ -32,9 +32,7 @@ def returnoutput(mons):
 	Returns the generated Pokémon in the right format.
 	"""
 	outtext = ""
-	print(len(mons))
 	for mon in mons:
-		print("Aufruf")
 		try:
 			outtext += mon["name"] + " @ " + mon["item"] + "\n"
 			outtext += "Ability: " + mon["ability"] + "\n"
@@ -50,7 +48,7 @@ def returnoutput(mons):
 			outtext += "\n"
 		except Exception as err:
 			log("%s\n}n%s"%(str(mon),str(err)))
-		return (outtext)
+	return (outtext)
 
 
 def writeoutput(mons, out):
@@ -120,7 +118,7 @@ def fullrandom():
 			x["moves"].append(moves[randint(0, len(moves) - 1)])
 			moves.remove(x["moves"][y])
 
-	print(returnoutput(mons))
+	print("\n"+returnoutput(mons))
 	print("")
 
 	if (args.write):
@@ -138,7 +136,7 @@ def legitrandom():
 	mons = []
 	for x in range(0, 6):
 		mons.append({})
-	print(len(mons))
+	
 	for x in mons:
 		ev = [0,0,0,0,0,0]
 		for y in range(0,255):
@@ -187,9 +185,8 @@ def legitrandom():
 				moves.remove(x["moves"][y])
 				i+=1
 			
-	print(mons)
 	
-	print("\n\n"+returnoutput(mons))
+	print("\n"+returnoutput(mons))
 	print("")
 	if (args.write):
 		writeoutput(mons, "balanced randomized")

@@ -10,3 +10,11 @@ resources/
 \.project
 
 \.classpath
+
+\.gitignore
+
+*.jar
+
+*.java
+
+src/logs/
