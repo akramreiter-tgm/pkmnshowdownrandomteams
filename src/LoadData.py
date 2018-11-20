@@ -19,7 +19,7 @@ specialforms=[
 			"shaymin-sky",
 			"wormadam-sandy","wormadam-trash",
 			"gourgeist-large","gourgeist-small","gourgeist-super",
-			"meowstic-f"
+			"meowstic-female"
 			]
 
 def reassemble():
@@ -63,9 +63,11 @@ def reassemble():
 			for n in jout['moves']:
 				x[str(lx)]['moves'].append(n['move']['name'])
 			print("Done: %s"%specialforms[i])
+			lx+=1
 		except:
 			print("ERROR at %s"%specialforms[i])
-		lx+=1
+		
+		
 	with open("specialitems.json","r") as specialfile:
 		specialitems=json.load(specialfile)
 		
