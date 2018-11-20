@@ -3,6 +3,8 @@ import argparse
 from random import randint
 from pathlib import Path
 import os
+import time
+import traceback
 
 parser = argparse.ArgumentParser()
 
@@ -19,26 +21,36 @@ parser.add_argument("-lr", "--legitrandom",
 
 args = parser.parse_args()
 
+def log(tolog):
+	datetoday=time.strftime("%Y%m%d-%H%M%S")	
+	with open("errorlog_%s"%datetoday,"a") as outfile:
+		outfile.write("%s"%(tolog))
+		exit(0)
 
 def returnoutput(mons):
 	"""
 	Returns the generated Pokémon in the right format.
 	"""
 	outtext = ""
+	print(len(mons))
 	for mon in mons:
-		outtext += mon["name"] + " @ " + mon["item"] + "\n"
-		outtext += "Ability: " + mon["ability"] + "\n"
-		if mon["level"] > 0:
-			outtext += "Level: " + str(mon["level"]) + "\n"
-		if len(mon["ev"]) > 0:
-			outtext += "EVs: " + mon["ev"] + "\n"
-		outtext += mon["nature"] + " Nature" + "\n"
-		if len(mon["iv"]) > 0:
-			outtext += "IVs: " + mon["iv"] + "\n"
-		for x in mon["moves"]:
-			outtext += "- " + x + "\n"
-		outtext += "\n"
-	return (outtext)
+		print("Aufruf")
+		try:
+			outtext += mon["name"] + " @ " + mon["item"] + "\n"
+			outtext += "Ability: " + mon["ability"] + "\n"
+			if mon["level"] > 0:
+				outtext += "Level: " + str(mon["level"]) + "\n"
+			if len(mon["ev"]) > 0:
+				outtext += "EVs: " + mon["ev"] + "\n"
+			outtext += mon["nature"] + " Nature" + "\n"
+			if len(mon["iv"]) > 0:
+				outtext += "IVs: " + mon["iv"] + "\n"
+			for x in mon["moves"]:
+				outtext += "- " + x + "\n"
+			outtext += "\n"
+		except Exception as err:
+			log("%s\n}n%s"%(str(mon),str(err)))
+		return (outtext)
 
 
 def writeoutput(mons, out):
@@ -99,13 +111,10 @@ def fullrandom():
 		x["name"] = pkmn[randint(0, len(pkmn) - 1)]
 		pkmn.remove(x["name"])
 		x["nature"] = nature[randint(0, len(nature) - 1)]
-		nature.remove(x["nature"])
 		x["ability"] = ability[randint(0, len(ability) - 1)]
-		ability.remove(x["ability"])
 		x["level"] = 0
 		x["iv"] = ""
 		x["item"] = item[randint(0, len(item) - 1)]
-		item.remove(x["item"])
 		x["moves"] = []
 		for y in range(0, 4):
 			x["moves"].append(moves[randint(0, len(moves) - 1)])
@@ -129,6 +138,7 @@ def legitrandom():
 	mons = []
 	for x in range(0, 6):
 		mons.append({})
+	print(len(mons))
 	for x in mons:
 		ev = [0,0,0,0,0,0]
 		for y in range(0,255):
@@ -152,11 +162,14 @@ def legitrandom():
 		item.append(temp[pnr]["items"])
 		
 		x["nature"] = nature[randint(0, len(nature) - 1)]
-		nature.remove(x["nature"])
-		if len(ability)==1:
-			x["ability"] = ability[0]
-		else:
-			x["ability"] = ability[randint(0, len(ability) - 1)]
+		
+		try:
+			if len(ability)==1:
+				x["ability"] = ability[0]
+			else:
+				x["ability"] = ability[randint(0, len(ability) - 1)]
+		except Exception as err:
+			log("Anzahl Ability, Max Index : %i, %i\nPokeset: %s\n\n%s"%(len(ability),len(ability)-1,str(temp[pnr]),str(err)))
 		ability.remove(x["ability"])
 		x["level"] = 0
 		x["iv"] = ""
@@ -174,8 +187,9 @@ def legitrandom():
 				moves.remove(x["moves"][y])
 				i+=1
 			
-
-	print(returnoutput(mons))
+	print(mons)
+	
+	print("\n\n"+returnoutput(mons))
 	print("")
 	if (args.write):
 		writeoutput(mons, "balanced randomized")
