@@ -12,28 +12,49 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-w", "--write",
 					help="If 'True' it generates an output file in the local 'C:/Users/<USER>/Documents/My Games/Pokemon Showdown/Teams/full randomized' folder",
 					type=bool, required=False, default=False, nargs='?', const=True)
+					
 parser.add_argument("-f", "--fullrandom",
 					help="All random, all extreme",
 					type=bool, required=False, default=False, nargs='?', const=True)
+					
 parser.add_argument("-lr", "--legitrandom",
 					help="Legit random teams.",
 					type=bool, required=False, default=False, nargs='?', const=True)
+					
+parser.add_argument("-lrfe", "--legitrandomfullyevolved",
+					help="Legit random teams with fully evolved pokémon only.",
+					type=bool, required=False, default=False, nargs='?', const=True)
+					
+parser.add_argument("-lrlm", "--legitrandomlegitmoves",
+					help="Legit random teams with commonly accepted top tier moves only.",
+					type=bool, required=False, default=False, nargs='?', const=True)
+					
+parser.add_argument("-lrfelm", "--legitrandomfullyevolvedlegitmoves",
+					help="Legit random teams with fully evolved pokémon and commonly accepted top tier moves only.",
+					type=bool, required=False, default=False, nargs='?', const=True)
+					
 parser.add_argument("-sr", "--structuredrandom",
 					help="Random teams with preset movesets",
 					type=bool, required=False, default=False, nargs='?', const=True)
+					
 parser.add_argument("-srm", "--srmega",
 					help="Limits amount of Mega evolutions in -sr teams",
 					type=int, required=False, default=1, nargs='?', const=True)
+					
 parser.add_argument("-srz", "--srzmove",
 					help="Limits amount of Z moves in -sr teams",
 					type=int, required=False, default=1, nargs='?', const=True)
+					
 parser.add_argument("-src", "--srchoice",
 					help="Limits amount of choice items in -sr teams",
 					type=int, required=False, default=1, nargs='?', const=True)
+					
 parser.add_argument("-srut", "--sruniquetypes",
 					help="Every mon in the team has an unique type",
 					type=bool, required=False, default=False, nargs='?', const=True)
 
+					
+					
 args = parser.parse_args()
 
 def log(tolog):
@@ -148,6 +169,10 @@ def legitrandom():
 		itemp = json.load(source)
 	item = itemp["item"]
 	nature = itemp["nature"]
+	with open("pokewhitelist.json") as source:
+		whitelist=json.load(source)
+	with open("moveblacklist.json") as source:
+		blacklist=json.load(source)
 	with open("fullsets.json","r") as source:
 		temp=json.load(source)
 
@@ -170,8 +195,9 @@ def legitrandom():
 			pnr=str(randint(0, len(temp) - 1))
 			for i in mons:
 				if temp[pnr]["name"] not in i.values():
-					x["name"] = temp[pnr]["name"]
-					exit=True
+					if (temp[pnr]["name"] in whitelist["whitelist"] and (args.legitrandomfullyevolved or args.legitrandomfullyevolvedlegitmoves)) or not (args.legitrandomfullyevolved or args.legitrandomfullyevolvedlegitmoves):
+						x["name"] = temp[pnr]["name"]
+						exit=True
 		
 		ability=temp[pnr]["abil"]
 		moves=temp[pnr]["moves"]
@@ -193,9 +219,13 @@ def legitrandom():
 		item.remove(x["item"])
 		x["moves"] = []
 		if(len(moves)>=4):
-			for y in range(0, 4):
-				x["moves"].append(moves[randint(0, len(moves) - 1)])
-				moves.remove(x["moves"][y])
+			y=0
+			while y<4:
+				rinteger=randint(0, len(moves) - 1)
+				if (moves[rinteger] not in blacklist["blacklist"] and (args.legitrandomlegitmoves or args.legitrandomfullyevolvedlegitmoves)) or not (args.legitrandomlegitmoves or args.legitrandomfullyevolvedlegitmoves):
+					x["moves"].append(moves[rinteger])
+					moves.remove(x["moves"][y])
+					y+=1
 		else:
 			i=0
 			for y in range(0, len(moves)-i):
@@ -280,7 +310,7 @@ def generateteams():
 	"""
 	if args.fullrandom:
 		fullrandom()
-	if args.legitrandom:
+	if args.legitrandom or args.legitrandomfullyevolved or args.legitrandomlegitmoves or args.legitrandomfullyevolvedlegitmoves:
 		legitrandom()
 	if args.structuredrandom:
 		structuredrandom(args.srzmove, args.srmega)
