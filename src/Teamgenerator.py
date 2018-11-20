@@ -221,7 +221,6 @@ def legitrandom():
 				x["ability"] = ability[randint(0, len(ability) - 1)]
 		except Exception as err:
 			log("Anzahl Ability, Max Index : %i, %i\nPokeset: %s\n\n%s\n\n%s"%(len(ability),len(ability)-1,str(temp[pnr]),str(err),str(mons)))
-		ability.remove(x["ability"])
 		x["level"] = 0
 		x["iv"] = ""
 		x["item"] = item[randint(0, len(item) - 1)]
