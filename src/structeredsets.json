@@ -2587,6 +2587,140 @@
 					]
 				}
 			]
+		},
+		
+		{
+			"name":"Charizard",
+			"group":"",
+			"sets":[
+				{
+					"item":"Charizardite X",
+					"weight":6,
+					"tags":["ou","mtfire","mega"],
+					"ability":"Blaze",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Flare Blitz",
+							"Earthquake",
+							"Dragon Claw",
+							"Roost"
+						],
+						[
+							"Flare Blitz",
+							"Earthquake",
+							"Dragon Claw",
+							"Dragon Dance"
+						],
+						[
+							"Flare Blitz",
+							"Earthquake",
+							"Dragon Dance",
+							"Roost"
+						]
+					]
+				},
+				{
+					"item":"Charizardite Y",
+					"weight":4,
+					"tags":["ou","mtfire","mtflying","mega","sunny"],
+					"ability":"Blaze",
+					"level":70,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Flamethrower",
+							"Solar Beam",
+							"Focus Blast",
+							"Roost"
+						],
+						[
+							"Flamethrower",
+							"Solar Beam",
+							"Air Slash",
+							"Roost"
+						]
+					]
+				},
+				{
+					"item":"Firium Z",
+					"weight":2,
+					"tags":["nu","mtfire","mtflying","z","sunny"],
+					"ability":"Solar Power",
+					"level":76,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Flamethrower",
+							"Solar Beam",
+							"Focus Blast",
+							"Sunny Day"
+						],
+						[
+							"Flamethrower",
+							"Solar Beam",
+							"Air Slash",
+							"Sunny Day"
+						]
+					]
+				},
+				{
+					"item":"Life Orb",
+					"weight":1,
+					"tags":["nu","mtfire","mtflying"],
+					"ability":"Solar Power",
+					"level":76,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Flamethrower",
+							"Solar Beam",
+							"Focus Blast",
+							"Roost"
+						],
+						[
+							"Flamethrower",
+							"Solar Beam",
+							"Air Slash",
+							"Roost"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Blacephalon",
+			"group":"",
+			"sets":[
+				{
+					"item":"",
+					"weight":1,
+					"tags":[],
+					"ability":"",
+					"level":0,
+					"ev":"",
+					"nature":"",
+					"iv":"",
+					"movesets":[
+						[
+							"",
+							"",
+							"",
+							""
+						]
+					]
+				}
+			]
 		}
 
   	],
