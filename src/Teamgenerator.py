@@ -161,7 +161,7 @@ def fullrandom():
 		x["nature"] = nature[randint(0, len(nature) - 1)]
 		x["ability"] = ability[randint(0, len(ability) - 1)]
 		x["level"] = 0
-		x["iv"] = ""
+		x["iv"] = ivrandom()
 		x["item"] = item[randint(0, len(item) - 1)]
 		x["moves"] = []
 		for y in range(0, 4):
