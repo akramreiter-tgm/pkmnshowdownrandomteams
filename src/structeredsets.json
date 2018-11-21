@@ -2318,7 +2318,7 @@
 		
 		{
 			"name":"Rotom-Wash",
-			"group":"",
+			"group":"Rotom",
 			"sets":[
 				{
 					"item":"Wiki Berry",
@@ -3154,12 +3154,8 @@
 					]
 				}
 			]
-		}
-
-  	],
-  
-  
-  	"blank set":
+		},
+		
 		{
 			"name":"Mew",
 			"group":"",
@@ -3221,6 +3217,531 @@
 							"Aura Sphere",
 							"Nasty Plot",
 							"Rock Polish"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Mimikyu",
+			"group":"",
+			"sets":[
+				{
+					"item":"Life Orb",
+					"weight":2,
+					"tags":["mtghost","mtfairy","ou"],
+					"ability":"Disguise",
+					"level":70,
+					"ev":"252 Atk / 4 SpD / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Swords Dance",
+							"Shadow Sneak",
+							"Play Rough",
+							"Shadow Claw"
+						],
+						[
+							"Swords Dance",
+							"Shadow Sneak",
+							"Play Rough",
+							"Drain Punch"
+						]
+					]
+				},
+				{
+					"item":"Focus Sash",
+					"weight":1,
+					"tags":["mtghost","mtfairy","ou"],
+					"ability":"Disguise",
+					"level":70,
+					"ev":"252 Atk / 4 SpD / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Swords Dance",
+							"Shadow Sneak",
+							"Play Rough",
+							"Shadow Claw"
+						],
+						[
+							"Swords Dance",
+							"Shadow Sneak",
+							"Play Rough",
+							"Drain Punch"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Pelipper",
+			"group":"",
+			"sets":[
+				{
+					"item":"Damp Rock",
+					"weight":1,
+					"tags":["rainy","mtwater","mtflying","ou"],
+					"ability":"Drizzle",
+					"level":70,
+					"ev":"248 HP / 36 Def / 224 SpD",
+					"nature":"Bold",
+					"iv":"",
+					"movesets":[
+						[
+							"Scald",
+							"U-turn",
+							"Roost",
+							"Defog"
+						],
+						[
+							"Scald",
+							"U-turn",
+							"Roost",
+							"Hurricane"
+						],
+						[
+							"Hurricane",
+							"U-turn",
+							"Roost",
+							"Defog"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Pinsir",
+			"group":"",
+			"sets":[
+				{
+					"item":"Pinsirite",
+					"weight":4,
+					"tags":["ou","mtbug","mega"],
+					"ability":"Hyper Cutter",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Swords Dance",
+							"Return",
+							"Close Combat",
+							"Quick Attack"
+						],
+						[
+							"Swords Dance",
+							"Return",
+							"Earthquake",
+							"Quick Attack"
+						]
+					]
+				},
+				{
+					"item":"Normalium Z",
+					"weight":2,
+					"tags":["pu","mtbug","z"],
+					"ability":"Moxie",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Me First",
+							"X-Scissor",
+							"Close Combat",
+							"Stone Edge"
+						]
+					]
+				},
+				{
+					"item":"Life Orb",
+					"weight":1,
+					"tags":["pu","mtbug","mega"],
+					"ability":"Mold Breaker",
+					"level":78,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Swords Dance",
+							"X-Scissor",
+							"Earthquake",
+							"Knock Off"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Sableye",
+			"group":"",
+			"sets":[
+				{
+					"item":"Sablenite",
+					"weight":5,
+					"tags":["ou","mtghost","mtdark","mega"],
+					"ability":"Prankster",
+					"level":70,
+					"ev":"252 HP / 4 Def / 252 SpD",
+					"nature":"Careful",
+					"iv":"",
+					"movesets":[
+						[
+							"Knock Off",
+							"Will-O-Wisp",
+							"Recover",
+							"Protect"
+						],
+						[
+							"Foul Play",
+							"Will-O-Wisp",
+							"Recover",
+							"Protect"
+						]
+					]
+				},
+				{
+					"item":"Rocky Helmet",
+					"weight":1,
+					"tags":["pu","mtghost","mtdark"],
+					"ability":"Prankster",
+					"level":78,
+					"ev":"252 HP / 252 Def /4 SpD",
+					"nature":"Impish",
+					"iv":"",
+					"movesets":[
+						[
+							"Knock Off",
+							"Will-O-Wisp",
+							"Recover",
+							"Taunt"
+						],
+						[
+							"Foul Play",
+							"Will-O-Wisp",
+							"Recover",
+							"Taunt"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Serperior",
+			"group":"",
+			"sets":[
+				{
+					"item":"Leftovers",
+					"weight":1,
+					"tags":["ou","mtgrass"],
+					"ability":"Contrary",
+					"level":70,
+					"ev":"56 HP / 200 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"",
+					"movesets":[
+						[
+							"Leaf Storm",
+							"Hidden Power Fighting",
+							"Substitute",
+							"Leech Seed"
+						]
+					]
+				},
+				{
+					"item":"Choice Scarf",
+					"weight":1,
+					"tags":["ou","mtgrass","choice"],
+					"ability":"Contrary",
+					"level":70,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"",
+					"movesets":[
+						[
+							"Leaf Storm",
+							"Hidden Power Fire",
+							"Dragon Pulse",
+							"Defog"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Skarmory",
+			"group":"",
+			"sets":[
+				{
+					"item":"Leftovers",
+					"weight":1,
+					"tags":["ou","mtsteel","mtflying","setup"],
+					"ability":"Sturdy",
+					"level":70,
+					"ev":"252 HP / 252 Atk / 4 SpD",
+					"nature":"Impish",
+					"iv":"",
+					"movesets":[
+						[
+							"Roost",
+							"Whirlwind",
+							"Stealth Rock",
+							"Spikes"
+						],
+						[
+							"Roost",
+							"Brave Bird",
+							"Stealth Rock",
+							"Spikes"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Swampert",
+			"group":"",
+			"sets":[
+				{
+					"item":"Swampertite",
+					"weight":1,
+					"tags":["ou","mtground","mtwater","rainy","mega"],
+					"ability":"Damp",
+					"level":70,
+					"ev":"252 Atk / 4 Def / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Waterfall",
+							"Earthquake",
+							"Ice Punch",
+							"Power-Up Punch"
+						],
+						[
+							"Waterfall",
+							"Earthquake",
+							"Ice Punch",
+							"Stone Edge"
+						],
+						[
+							"Waterfall",
+							"Earthquake",
+							"Ice Punch",
+							"Superpower"
+						]
+					]
+				},
+				{
+					"item":"Leftovers",
+					"weight":3,
+					"tags":["uu","mtground","mtwater"],
+					"ability":"Torrent",
+					"level":72,
+					"ev":"252 HP / 252 Def / 4 SpD",
+					"nature":"Relaxed",
+					"iv":"",
+					"movesets":[
+						[
+							"Stealth Rock",
+							"Earthquake",
+							"Scald",
+							"Roar"
+						],
+						[
+							"Stealth Rock",
+							"Earthquake",
+							"Scald",
+							"Toxic"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Tapu-Fini",
+			"group":"",
+			"sets":[
+				{
+					"item":"Leftovers",
+					"weight":1,
+					"tags":["ou","mtwater","mtfairy"],
+					"ability":"Misty Surge",
+					"level":70,
+					"ev":"252 HP / 4 Def / 252 SpD",
+					"nature":"Calm",
+					"iv":"",
+					"movesets":[
+						[
+							"Moonblast",
+							"Scald",
+							"Defog",
+							"Haze"
+						],
+						[
+							"Moonblast",
+							"Scald",
+							"Defog",
+							"Taunt"
+						],
+						[
+							"Moonblast",
+							"Nature's Madness",
+							"Defog",
+							"Taunt"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Victini",
+			"group":"",
+			"sets":[
+				{
+					"item":"Normalium Z",
+					"weight":5,
+					"tags":["ou","mtpsychic","mtfire","z"],
+					"ability":"Victory Star",
+					"level":70,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"",
+					"movesets":[
+						[
+							"Searing Shot",
+							"Stored Power",
+							"Energy Ball",
+							"Celebrate"
+						]
+					]
+				},
+				{
+					"item":"Choice Scarf",
+					"weight":4,
+					"tags":["ou","mtpsychic","mtfire","choice"],
+					"ability":"Victory Star",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"V-create",
+							"Bolt Strike",
+							"U-turn",
+							"Trick"
+						]
+					]
+				},
+				{
+					"item":"Expert Belt",
+					"weight":1,
+					"tags":["ou","mtpsychic","mtfire"],
+					"ability":"Victory Star",
+					"level":70,
+					"ev":"4 Atk / 252 SpA / 252 Spe",
+					"nature":"Naive",
+					"iv":"",
+					"movesets":[
+						[
+							"Blue Flare",
+							"U-turn",
+							"Bolt Strike",
+							"Psychic"
+						],
+						[
+							"Blue Flare",
+							"U-turn",
+							"Bolt Strike",
+							"Dazzling Gleam"
+						],
+						[
+							"Blue Flare",
+							"U-turn",
+							"Bolt Strike",
+							"Energy Ball"
+						],
+						[
+							"Blue Flare",
+							"U-turn",
+							"Bolt Strike",
+							"Glaciate"
+						],
+						[
+							"Blue Flare",
+							"U-turn",
+							"Bolt Strike",
+							"Shadow Ball"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Zapdos",
+			"group":"",
+			"sets":[
+				{
+					"item":"Leftovers",
+					"weight":1,
+					"tags":["ou","mtelectric","mtflying"],
+					"ability":"Static",
+					"level":70,
+					"ev":"252 HP / 252 Def / 4 SpD",
+					"nature":"Bold",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Discharge",
+							"Roost",
+							"Heat Wave",
+							"Defog"
+						]
+					]
+				}
+			]
+		}
+
+  	],
+  
+  
+  	"blank set":
+		{
+			"name":"",
+			"group":"",
+			"sets":[
+				{
+					"item":"",
+					"weight":1,
+					"tags":[],
+					"ability":"",
+					"level":70,
+					"ev":"",
+					"nature":"",
+					"iv":"",
+					"movesets":[
+						[
+							"",
+							"",
+							"",
+							""
 						]
 					]
 				}
