@@ -223,7 +223,7 @@ def legitrandom():
 			log("Anzahl Ability, Max Index : %i, %i\nPokeset: %s\n\n%s\n\n%s"%(len(ability),len(ability)-1,str(temp[pnr]),str(err),str(mons)))
 		x["level"] = 0
 		x["iv"] = ""
-		x["item"] = item[randint(0, len(item) - 1)]
+		x["item"] = itemtemp[randint(0, len(item) - 1)]
 		item.remove(x["item"])
 		x["moves"] = []
 		if(len(moves)>=4):
