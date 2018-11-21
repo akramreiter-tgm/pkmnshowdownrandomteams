@@ -48,6 +48,10 @@ parser.add_argument("-srz", "--srzmove",
 parser.add_argument("-src", "--srchoice",
 					help="Limits amount of choice items in -sr teams",
 					type=int, required=False, default=1, nargs='?', const=True)
+
+parser.add_argument("-srub", "--srultrabeast",
+					help="Limits amount of ultra beasts in -sr teams",
+					type=int, required=False, default=1, nargs='?', const=True)
 					
 parser.add_argument("-srut", "--sruniquetypes",
 					help="Every mon in the team has an unique type",

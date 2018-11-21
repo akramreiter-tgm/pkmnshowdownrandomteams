@@ -2704,7 +2704,7 @@
 			"sets":[
 				{
 					"item":"Choice Scarf",
-					"weight":1,
+					"weight":3,
 					"tags":["ub","mtfire","mtghost","choice"],
 					"ability":"Beast Boost",
 					"level":70,
