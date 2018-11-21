@@ -228,12 +228,15 @@ def legitrandom():
 		x["moves"] = []
 		if(len(moves)>=4):
 			y=0
+			limiter=500
 			while y<4:
 				rinteger=randint(0, len(moves) - 1)
-				if (moves[rinteger] not in blacklist["blacklist"] and (args.legitrandomlegitmoves or args.legitrandomfullyevolvedlegitmoves)) or not (args.legitrandomlegitmoves or args.legitrandomfullyevolvedlegitmoves):
+				if ((moves[rinteger] not in blacklist["blacklist"] and (args.legitrandomlegitmoves or args.legitrandomfullyevolvedlegitmoves)) or not (args.legitrandomlegitmoves or args.legitrandomfullyevolvedlegitmoves)) or limiter<=0:
 					x["moves"].append(moves[rinteger])
 					moves.remove(x["moves"][y])
 					y+=1
+				else:
+					limiter+=-1
 		else:
 			i=0
 			for y in range(0, len(moves)-i):
