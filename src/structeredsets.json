@@ -2703,20 +2703,38 @@
 			"group":"",
 			"sets":[
 				{
-					"item":"",
+					"item":"Choice Scarf",
 					"weight":1,
-					"tags":[],
-					"ability":"",
-					"level":0,
-					"ev":"",
-					"nature":"",
-					"iv":"",
+					"tags":["ub","mtfire","mtghost","choice"],
+					"ability":"Beast Boost",
+					"level":70,
+					"ev":"252 SpA / 4 SpD / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
 					"movesets":[
 						[
-							"",
-							"",
-							"",
-							""
+							"Shadow Ball",
+							"Flamethrower",
+							"Psyshock",
+							"Trick"
+						]
+					]
+				},
+				{
+					"item":"Life Orb",
+					"weight":1,
+					"tags":["ub","mtfire","mtghost","choice"],
+					"ability":"Beast Boost",
+					"level":70,
+					"ev":"252 SpA / 4 SpD / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Shadow Ball",
+							"Flamethrower",
+							"Psyshock",
+							"Hidden Power Grass"
 						]
 					]
 				}
