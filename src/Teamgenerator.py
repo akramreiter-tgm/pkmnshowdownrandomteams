@@ -123,7 +123,14 @@ def writeoutput(mons, out):
 	with open("%s/[gen7] Generated %s %i.txt" % (outpath, out, i), "w") as outfile:
 		outfile.write(returnoutput(mons))
 
-
+def ivrandom():
+	iv=[]
+	for i in range(0,6):	
+		iv.append(randint(30,31))
+	return("%i HP / %i Atk / %i Def / %i SpA / %i SpD / %i Spe" % (iv[0],iv[1],iv[2],iv[3],iv[4],iv[5]))
+	
+		
+		
 def fullrandom():
 	"""
 	TODO: Doc comments
@@ -226,7 +233,9 @@ def legitrandom():
 		except Exception as err:
 			log("Anzahl Ability, Max Index : %i, %i\nPokeset: %s\n\n%s\n\n%s"%(len(ability),len(ability)-1,str(temp[pnr]),str(err),str(mons)))
 		x["level"] = 0
-		x["iv"] = ""
+		
+		x['iv']=ivrandom()
+		
 		x["item"] = itemtemp[randint(0, len(item) - 1)]
 		item.remove(x["item"])
 		x["moves"] = []
