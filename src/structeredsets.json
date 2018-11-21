@@ -2739,6 +2739,421 @@
 					]
 				}
 			]
+		},
+		
+		{
+			"name":"Excadrill",
+			"group":"",
+			"sets":[
+				{
+					"item":"Focus Sash",
+					"weight":10,
+					"tags":["ou","mtground","mtsteel"],
+					"ability":"Mold Breaker",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Stealth Rock",
+							"Rapid Spin",
+							"Earthquake",
+							"Iron Head"
+						]
+					]
+				},
+				{
+					"item":"Choice Scarf",
+					"weight":10,
+					"tags":["ou","mtground","mtsteel"],
+					"ability":"Mold Breaker",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Rock Slide",
+							"Rapid Spin",
+							"Earthquake",
+							"Iron Head"
+						]
+					]
+				},
+				{
+					"item":"Sand Rush",
+					"weight":1,
+					"tags":["ou","mtground","mtsteel","sandstorm"],
+					"ability":"Mold Breaker",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Swords Dance",
+							"Rapid Spin",
+							"Earthquake",
+							"Iron Head"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Gastrodon",
+			"group":"",
+			"sets":[
+				{
+					"item":"Leftovers",
+					"weight":1,
+					"tags":["ou","mtwater","mtground"],
+					"ability":"Storm Drain",
+					"level":70,
+					"ev":"252 HP / 4 Def / 252 SpD",
+					"nature":"Sassy",
+					"iv":"",
+					"movesets":[
+						[
+							"Scald",
+							"Recover",
+							"Toxic",
+							"Earthquake"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Hawlucha",
+			"group":"",
+			"sets":[
+				{
+					"item":"Power Herb",
+					"weight":1,
+					"tags":["ou","mtfighting","mtflying"],
+					"ability":"Unburden",
+					"level":70,
+					"ev":"252 Atk / 4 SpD / 252 Spe",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Sky Attack",
+							"Acrobatics",
+							"High Jump Kick",
+							"Poison Jab"
+						]
+					]
+				},
+				{
+					"item":"Sitrus Berry",
+					"weight":1,
+					"tags":["ou","mtfighting","mtflying"],
+					"ability":"Unburden",
+					"level":70,
+					"ev":"252 Atk / 4 SpD / 252 Spe",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Swords Dance",
+							"Acrobatics",
+							"High Jump Kick",
+							"Poison Jab"
+						],
+						[
+							"Swords Dance",
+							"Acrobatics",
+							"Drain Punch",
+							"Poison Jab"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Hoopa-Unbound",
+			"group":"",
+			"sets":[
+				{
+					"item":"Focus Sash",
+					"weight":1,
+					"tags":["ou","mtpsychic","mtdark"],
+					"ability":"Magician",
+					"level":70,
+					"ev":"252 SpA / 4 SpD / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Nasty Plot",
+							"Dark Pulse",
+							"Psychic",
+							"Focus Blast"
+						],
+						[
+							"Nasty Plot",
+							"Dark Pulse",
+							"Psyshock",
+							"Focus Blast"
+						]
+					]
+				},
+				{
+					"item":"Fightinium Z",
+					"weight":3,
+					"tags":["ou","mtpsychic","mtdark","z"],
+					"ability":"Magician",
+					"level":70,
+					"ev":"252 SpA / 4 SpD / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Nasty Plot",
+							"Dark Pulse",
+							"Psychic",
+							"Focus Blast"
+						],
+						[
+							"Nasty Plot",
+							"Dark Pulse",
+							"Psyshock",
+							"Focus Blast"
+						]
+					]
+				},
+				{
+					"item":"Choice Specs",
+					"weight":1,
+					"tags":["ou","mtpsychic","mtdark","choice"],
+					"ability":"Magician",
+					"level":70,
+					"ev":"252 SpA / 4 SpD / 252 Spe",
+					"nature":"Modest",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Thunderbolt",
+							"Dark Pulse",
+							"Psychic",
+							"Focus Blast"
+						],
+						[
+							"Thunderbolt",
+							"Dark Pulse",
+							"Psyshock",
+							"Focus Blast"
+						]
+					]
+				},
+				{
+					"item":"Choice Band",
+					"weight":1,
+					"tags":["ou","mtpsychic","mtdark","choice"],
+					"ability":"Magician",
+					"level":70,
+					"ev":"252 Atk / 4 SpD / 252 Spe",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Hyperspace Fury",
+							"Gunk Shot",
+							"Fire Punch",
+							"Zen Headbutt"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Jirachi",
+			"group":"",
+			"sets":[
+				{
+					"item":"Leftovers",
+					"weight":1,
+					"tags":["ou","mtsteel","mtpsychic"],
+					"ability":"Serene Grace",
+					"level":70,
+					"ev":"252 HP / 4 Def / 252 SpD",
+					"nature":"Careful",
+					"iv":"",
+					"movesets":[
+						[
+							"Wish",
+							"Protect",
+							"Iron Head",
+							"U-turn"
+						],
+						[
+							"Stealth Rock",
+							"Healing Wish",
+							"Iron Head",
+							"U-turn"
+						]
+					]
+				},
+				{
+					"item":"Choice Scarf",
+					"weight":3,
+					"tags":["ou","mtsteel","mtpsychic","choice"],
+					"ability":"Serene Grace",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Iron Head",
+							"Heart Stamp",
+							"Ice Punch",
+							"U-turn"
+						],
+						[
+							"Iron Head",
+							"Heart Stamp",
+							"Thunder Punch",
+							"U-turn"
+						]
+					]
+				},
+				{
+					"item":"Normalium Z",
+					"weight":3,
+					"tags":["ou","mtsteel","mtpsychic","z"],
+					"ability":"Serene Grace",
+					"level":70,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Iron Head",
+							"Heart Stamp",
+							"Ice Punch",
+							"Happy Hour"
+						],
+						[
+							"Iron Head",
+							"Heart Stamp",
+							"Thunder Punch",
+							"Happy Hour"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Keldeo",
+			"group":"",
+			"sets":[
+				{
+					"item":"Life Orb",
+					"weight":1,
+					"tags":["ou","mtwater","mtfighting"],
+					"ability":"Justified",
+					"level":70,
+					"ev":"252 SpA / 4 SpD / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Scald",
+							"Secret Sword",
+							"Calm Mind",
+							"Taunt"
+						]
+					]
+				},
+				{
+					"item":"Waterium Z",
+					"weight":1,
+					"tags":["ou","mtwater","mtfighting","z"],
+					"ability":"Justified",
+					"level":70,
+					"ev":"252 SpA / 4 SpD / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Hydro Pump",
+							"Secret Sword",
+							"Calm Mind",
+							"Taunt"
+						]
+					]
+				},
+				{
+					"item":"Choice Scarf",
+					"weight":1,
+					"tags":["ou","mtwater","mtfighting","choice"],
+					"ability":"Justified",
+					"level":70,
+					"ev":"4 Atk / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"",
+					"movesets":[
+						[
+							"Hydro Pump",
+							"Secret Sword",
+							"Stone Edge",
+							"Icy Wind"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Lopunny",
+			"group":"",
+			"sets":[
+				{
+					"item":"Lopunnite",
+					"weight":4,
+					"tags":["ou","mtnormal","mega"],
+					"ability":"Limber",
+					"level":70,
+					"ev":"252 Atk / 4 SpD / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Return",
+							"High Jump Kick",
+							"Power-Up Punch",
+							"Fake Out"
+						]
+					]
+				},
+				{
+					"item":"Flame Orb",
+					"weight":1,
+					"tags":["pu","mtnormal"],
+					"ability":"Limber",
+					"level":78,
+					"ev":"252 Atk / 4 SpD / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Return",
+							"High Jump Kick",
+							"Healing Wish",
+							"Switcheroo"
+						]
+					]
+				}
+			]
 		}
 
   	],
@@ -2746,24 +3161,66 @@
   
   	"blank set":
 		{
-			"name":"",
+			"name":"Mew",
 			"group":"",
 			"sets":[
 				{
-					"item":"",
+					"item":"Leftovers",
 					"weight":1,
-					"tags":[],
-					"ability":"",
-					"level":0,
-					"ev":"",
-					"nature":"",
+					"tags":["ou","mtpsychic"],
+					"ability":"Synchronize",
+					"level":70,
+					"ev":"252 HP / 252 Def / 4 SpD",
+					"nature":"Bold",
 					"iv":"",
 					"movesets":[
 						[
-							"",
-							"",
-							"",
-							""
+							"Psychic",
+							"Will-O-Wisp",
+							"Soft-Boiled",
+							"Defog"
+						],
+						[
+							"Psychic",
+							"Will-O-Wisp",
+							"Soft-Boiled",
+							"Stealth Rock"
+						]
+					]
+				},
+				{
+					"item":"Mewnium Z",
+					"weight":4,
+					"tags":["ou","mtpsychic","z"],
+					"ability":"Synchronize",
+					"level":70,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Modest",
+					"iv":"",
+					"movesets":[
+						[
+							"Psychic",
+							"Aura Sphere",
+							"Nasty Plot",
+							"Rock Polish"
+						]
+					]
+				},
+				{
+					"item":"Aguav Berry",
+					"weight":1,
+					"tags":["ou","mtpsychic"],
+					"ability":"Synchronize",
+					"level":70,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Modest",
+					"iv":"",
+					"movesets":[
+						[
+							"Psychic",
+							"Aura Sphere",
+							"Nasty Plot",
+							"Rock Polish"
 						]
 					]
 				}
