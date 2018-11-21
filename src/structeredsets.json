@@ -3717,6 +3717,238 @@
 					]
 				}
 			]
+		},
+		
+		{
+			"name":"Gyarados",
+			"group":"",
+			"sets":[
+				{
+					"item":"Gyaradosite",
+					"weight":4,
+					"tags":["ou","mtwater","mega"],
+					"ability":"Intimidate",
+					"level":70,
+					"ev":"252 Atk / 4 SpD / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Dragon Dance",
+							"Crunch",
+							"Waterfall",
+							"Earthquake"
+						],
+						[
+							"Dragon Dance",
+							"Crunch",
+							"Waterfall",
+							"Ice Fang"
+						],
+						[
+							"Dragon Dance",
+							"Crunch",
+							"Waterfall",
+							"Stone Edge"
+						]
+					]
+				},
+				{
+					"item":"Flynium Z",
+					"weight":3,
+					"tags":["uubl","mtwater","mtflying","z"],
+					"ability":"Moxie",
+					"level":71,
+					"ev":"252 Atk / 4 SpD / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Dragon Dance",
+							"Bounce",
+							"Waterfall",
+							"Earthquake"
+						],
+						[
+							"Dragon Dance",
+							"Bounce",
+							"Waterfall",
+							"Stone Edge"
+						]
+					]
+				},
+				{
+					"item":"Focus Sash",
+					"weight":2,
+					"tags":["uubl","mtwater","mtflying","z"],
+					"ability":"Moxie",
+					"level":71,
+					"ev":"252 Atk / 4 SpD / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Dragon Dance",
+							"Ice Fang",
+							"Waterfall",
+							"Earthquake"
+						],
+						[
+							"Dragon Dance",
+							"Earthquake",
+							"Waterfall",
+							"Stone Edge"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Azumarill",
+			"group":"",
+			"sets":[
+				{
+					"item":"Normalium Z",
+					"weight":2,
+					"tags":["uubl","mtfairy","mtwater","z"],
+					"ability":"Huge Power",
+					"level":71,
+					"ev":"252 HP / 252 Atk / 4 SpD",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Belly Drum",
+							"Aqua Jet",
+							"Play Rough",
+							"Knock Off"
+						],
+						[
+							"Belly Drum",
+							"Aqua Jet",
+							"Liquidation",
+							"Knock Off"
+						]
+					]
+				},
+				{
+					"item":"Leftovers",
+					"weight":1,
+					"tags":["uubl","mtfairy","mtwater","setup"],
+					"ability":"Sap Sipper",
+					"level":71,
+					"ev":"252 HP / 4 Def / 252 SpD",
+					"nature":"Calm",
+					"iv":"",
+					"movesets":[
+						[
+							"Perish Song",
+							"Whirlpool",
+							"Protect",
+							"Toxic"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Breloom",
+			"group":"",
+			"sets":[
+				{
+					"item":"Life Orb",
+					"weight":1,
+					"tags":["uubl","mtfighting","mtgrass"],
+					"ability":"Technician",
+					"level":71,
+					"ev":"252 Atk / 4 Def / 252 Spe",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Swords Dance",
+							"Mach Punch",
+							"Bullet Seed",
+							"Spore"
+						]
+					]
+				},
+				{
+					"item":"Toxic Orb",
+					"weight":1,
+					"tags":["uubl","mtfighting","mtgrass"],
+					"ability":"Poison Heal",
+					"level":71,
+					"ev":"252 HP / 252 Atk / 4 SpD",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Bulk Up",
+							"Focus Punch",
+							"Seed Bomb",
+							"Spore"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Buzzwole",
+			"group":"",
+			"sets":[
+				{
+					"item":"Leftovers",
+					"weight":1,
+					"tags":["uubl","mtbug","mtfighting","ub"],
+					"ability":"Beast Boost",
+					"level":71,
+					"ev":"252 HP / 252 Def / 4 SpD",
+					"nature":"Impish",
+					"iv":"",
+					"movesets":[
+						[
+							"Drain Punch",
+							"Ice Punch",
+							"Bulk Up",
+							"Leech Life"
+						],
+						[
+							"Drain Punch",
+							"Ice Punch",
+							"Bulk Up",
+							"Roost"
+						]
+					]
+				},
+				{
+					"item":"Life Orb",
+					"weight":1,
+					"tags":["uubl","mtbug","mtfighting","ub"],
+					"ability":"Beast Boost",
+					"level":71,
+					"ev":"252 HP / 252 Atk / 4 SpD",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Drain Punch",
+							"Ice Punch",
+							"Bulk Up",
+							"Leech Life"
+						],
+						[
+							"Drain Punch",
+							"Thunder Punch",
+							"Bulk Up",
+							"Leech Life"
+						]
+					]
+				}
+			]
 		}
 
   	],
@@ -3732,7 +3964,7 @@
 					"weight":1,
 					"tags":[],
 					"ability":"",
-					"level":70,
+					"level":0,
 					"ev":"",
 					"nature":"",
 					"iv":"",
