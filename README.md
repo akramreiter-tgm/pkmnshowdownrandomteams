@@ -12,9 +12,8 @@ The scripts are written in Python 3.7, thus require an installation of it. You a
 
 ## Usage and start parameters
 To use the script call `python Teamgenerator.py`. This by itself doesn't do anything without args.
+
 The following args can be used to generate teams:
-* -h, , --help: show this help message and exit
-* -w , --write: Generates an output file in the local 'C:/Users/<USER>/Documents/My Games/Pokemon Showdown/Teams/full randomized' folder
 * -f , --fullrandom: All random, all extreme values. CUSTOM GAMES ONLY
 * -lr , --legitrandom: Random teams with legit movesets only.
 * -sr , --structuredrandom: Random teams with preset movesets
@@ -27,6 +26,10 @@ The following args can be used to modify the generation of teams:
 * -c , --choice: Limits amount of choice items in teams. Works with -sr
 * -ub , --ultrabeast: Limits amount of ultra beasts in teams. Works with -sr
 * -ut , --uniquetypes: Every Pokemon in the team has an unique type. Works with -sr
+
+The following args can make your life a little bit easier:
+* -h, , --help: show this help message and exit
+* -w , --write: Generates an output file in the local 'C:/Users/<USER>/Documents/My Games/Pokemon Showdown/Teams/full randomized' folder
 
 # Secondary script: LoadData.py
 It is used to load the specific data of each Pokemon PokeAPI supports and save it into a .json file. It is meant to be used when the data needs to be updated due to a new generation. The data will most likely be uploaded to this repository anyway, so there is no need to use this script whatsoever. If you really need to, use `python LoadData.py -h`.
