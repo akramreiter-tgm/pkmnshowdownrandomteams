@@ -10,27 +10,23 @@ parser = argparse.ArgumentParser()
 
 # Extend if needed
 parser.add_argument("-w", "--write",
-					help="If 'True' it generates an output file in the local 'C:/Users/<USER>/Documents/My Games/Pokemon Showdown/Teams/full randomized' folder",
+					help="Generates an output file in the local 'C:/Users/<USER>/Documents/My Games/Pokemon Showdown/Teams/full randomized' folder",
 					type=bool, required=False, default=False, nargs='?', const=True)
 					
 parser.add_argument("-f", "--fullrandom",
-					help="All random, all extreme",
+					help="All random, all extreme values. CUSTOM GAMES ONLY",
 					type=bool, required=False, default=False, nargs='?', const=True)
 					
 parser.add_argument("-lr", "--legitrandom",
-					help="Legit random teams.",
+					help="Random teams with legit movesets only.",
 					type=bool, required=False, default=False, nargs='?', const=True)
 					
-parser.add_argument("-lrfe", "--legitrandomfullyevolved",
-					help="Legit random teams with fully evolved pokémon only.",
+parser.add_argument("-fe", "--fullyevolved",
+					help="Limits -lr teams to fully evolved pokémon only.",
 					type=bool, required=False, default=False, nargs='?', const=True)
 					
-parser.add_argument("-lrlm", "--legitrandomlegitmoves",
-					help="Legit random teams with commonly accepted top tier moves only.",
-					type=bool, required=False, default=False, nargs='?', const=True)
-					
-parser.add_argument("-lrfelm", "--legitrandomfullyevolvedlegitmoves",
-					help="Legit random teams with fully evolved pokémon and commonly accepted top tier moves only.",
+parser.add_argument("-lm", "--legitmoves",
+					help="Limits -lr teams to commonly accepted useful moves only.",
 					type=bool, required=False, default=False, nargs='?', const=True)
 					
 parser.add_argument("-sr", "--structuredrandom",
@@ -129,6 +125,28 @@ def ivrandom():
 		iv.append(randint(30,31))
 	return("%i HP / %i Atk / %i Def / %i SpA / %i SpD / %i Spe" % (iv[0],iv[1],iv[2],iv[3],iv[4],iv[5]))
 	
+	
+def evrandom():
+	ev=[0,0,0,0,0,0]
+	for y in range(0,254):
+		rng=randint(0,5)
+		if ev[rng]==252:
+			y+=-1
+		else:
+			ev[rng]+=2
+	for i in range(0,len(ev)):
+		if ev[i]%4==2:
+			for n in range(0,len(ev)):
+				if i != n and ev[n]%4==2:
+					f=randint(0,1)
+					if f==0:
+						ev[i]+=-2
+						ev[n]+=2
+					else:
+						ev[i]+=2
+						ev[n]+=-2
+	return("%i HP / %i Atk / %i Def / %i SpA / %i SpD / %i Spe" % (ev[0],ev[1],ev[2],ev[3],ev[4],ev[5]))
+	
 		
 		
 def fullrandom():
@@ -192,14 +210,7 @@ def legitrandom():
 		mons.append({})
 	
 	for x in mons:
-		ev = [0,0,0,0,0,0]
-		for y in range(0,255):
-			rng=randint(0,5)
-			if ev[rng]==252:
-				y+=-1
-			else:
-				ev[rng]+=2
-		x["ev"]="%i HP / %i Atk / %i Def / %i SpA / %i SpD / %i Spe" % (ev[0],ev[1],ev[2],ev[3],ev[4],ev[5])
+		x["ev"]=evrandom()
 			
 		used=[]
 		for y in mons:
@@ -213,7 +224,7 @@ def legitrandom():
 			pnr=str(randint(0, len(temp) - 1))
 			for i in mons:
 				if temp[pnr]["name"] not in used:
-					if (temp[pnr]["name"] in whitelist["whitelist"] and (args.legitrandomfullyevolved or args.legitrandomfullyevolvedlegitmoves)) or not (args.legitrandomfullyevolved or args.legitrandomfullyevolvedlegitmoves):
+					if (temp[pnr]["name"] in whitelist["whitelist"] and args.fullyevolved) or not args.fullyevolved:
 						x["name"] = temp[pnr]["name"]
 						exit=True
 		
@@ -244,7 +255,7 @@ def legitrandom():
 			limiter=500
 			while y<4:
 				rinteger=randint(0, len(moves) - 1)
-				if ((moves[rinteger] not in blacklist["blacklist"] and (args.legitrandomlegitmoves or args.legitrandomfullyevolvedlegitmoves)) or not (args.legitrandomlegitmoves or args.legitrandomfullyevolvedlegitmoves)) or limiter<=0:
+				if ((moves[rinteger] not in blacklist["blacklist"] and args.legitmoves) or not args.legitmoves) or limiter<=0:
 					x["moves"].append(moves[rinteger])
 					moves.remove(x["moves"][y])
 					y+=1
@@ -334,7 +345,7 @@ def generateteams():
 	"""
 	if args.fullrandom:
 		fullrandom()
-	if args.legitrandom or args.legitrandomfullyevolved or args.legitrandomlegitmoves or args.legitrandomfullyevolvedlegitmoves:
+	if args.legitrandom:
 		legitrandom()
 	if args.structuredrandom:
 		structuredrandom(args.srzmove, args.srmega)
