@@ -10,48 +10,41 @@ parser = argparse.ArgumentParser()
 
 # Extend if needed
 parser.add_argument("-w", "--write",
-					help="Generates an output file in the local 'C:/Users/<USER>/Documents/My Games/Pokemon Showdown/Teams/full randomized' folder",
-					type=bool, required=False, default=False, nargs='?', const=True)
+					help="Generates an output file in the local 'C:/Users/<USER>/Documents/My Games/Pokemon Showdown/Teams/full randomized' folder",action='store_true')
 					
 parser.add_argument("-f", "--fullrandom",
-					help="All random, all extreme values. CUSTOM GAMES ONLY",
-					type=bool, required=False, default=False, nargs='?', const=True)
+					help="All random, all extreme values. CUSTOM GAMES ONLY",action='store_true')
 					
 parser.add_argument("-lr", "--legitrandom",
-					help="Random teams with legit movesets only.",
-					type=bool, required=False, default=False, nargs='?', const=True)
+					help="Random teams with legit movesets only.",action='store_true')
 					
 parser.add_argument("-fe", "--fullyevolved",
-					help="Limits -lr teams to fully evolved pokémon only.",
-					type=bool, required=False, default=False, nargs='?', const=True)
+					help="Limits teams to fully evolved pokémon only.\nWorks with -lr",action='store_true')
 					
 parser.add_argument("-lm", "--legitmoves",
-					help="Limits -lr teams to commonly accepted useful moves only.",
-					type=bool, required=False, default=False, nargs='?', const=True)
+					help="Limits teams to commonly accepted useful moves only.\nWorks with -lr",action='store_true')
 					
 parser.add_argument("-sr", "--structuredrandom",
-					help="Random teams with preset movesets",
-					type=bool, required=False, default=False, nargs='?', const=True)
+					help="Random teams with preset movesets",action='store_true')
 					
-parser.add_argument("-srm", "--srmega",
-					help="Limits amount of Mega evolutions in -sr teams",
+parser.add_argument("-m", "--mega",
+					help="Limits amount of mega evolutions in teams.\nWorks with -sr",
 					type=int, required=False, default=1, nargs='?', const=True)
 					
-parser.add_argument("-srz", "--srzmove",
-					help="Limits amount of Z moves in -sr teams",
+parser.add_argument("-zm", "--zmove",
+					help="Limits amount of Z moves in teams.\nWorks with -sr",
 					type=int, required=False, default=1, nargs='?', const=True)
 					
-parser.add_argument("-src", "--srchoice",
-					help="Limits amount of choice items in -sr teams",
+parser.add_argument("-c", "--choice",
+					help="Limits amount of choice items in teams.\nWorks with -sr",
 					type=int, required=False, default=1, nargs='?', const=True)
 
-parser.add_argument("-srub", "--srultrabeast",
-					help="Limits amount of ultra beasts in -sr teams",
+parser.add_argument("-ub", "--ultrabeast",
+					help="Limits amount of ultra beasts in teams.\nWorks with -sr",
 					type=int, required=False, default=1, nargs='?', const=True)
 					
-parser.add_argument("-srut", "--sruniquetypes",
-					help="Every mon in the team has an unique type",
-					type=bool, required=False, default=False, nargs='?', const=True)
+parser.add_argument("-ut", "--uniquetypes",
+					help="Every Pokemon in the team has an unique type.\nWorks with -sr", action='store_true')
 
 					
 					
@@ -348,7 +341,7 @@ def generateteams():
 	if args.legitrandom:
 		legitrandom()
 	if args.structuredrandom:
-		structuredrandom(args.srzmove, args.srmega)
+		structuredrandom(args.zmove, args.mega)
 
 
 if __name__ == '__main__':

@@ -5,6 +5,15 @@ import requests
 
 papiurl="https://pokeapi.co/api/v2/pokemon/%s/"
 maxrequests=1000
+
+parser = argparse.ArgumentParser()
+
+parser.add_argument("-load", "--load",
+					help="Loads the data. THIS TAKES FOREVER, DON'T DO IT IF THERE IS ANY OTHER MORE REASONABLE WAY!",
+					action='store_true')
+					
+args = parser.parse_args()
+
 specialforms=[
 			"deoxys-attack","deoxys-defense","deoxys-speed",
 			"diglett-alola","dugtrio-alola","exeggutor-alola","geodude-alola","grimer-alola","golem-alola","graveler-alola","marowak-alola","muk-alola","raticate-alola","rattata-alola","raichu-alola","ninetales-alola","sandshrew-alola","vulpix-alola","sandslash-alola",
@@ -83,5 +92,5 @@ def reassemble():
 		
 	
 			
-if __name__=="__main__":
+if __name__=="__main__" and args.load:
 	reassemble()

@@ -17,15 +17,15 @@ The following args can be used:
 * -w , --write: Generates an output file in the local 'C:/Users/<USER>/Documents/My Games/Pokemon Showdown/Teams/full randomized' folder
 * -f , --fullrandom: All random, all extreme values. CUSTOM GAMES ONLY
 * -lr , --legitrandom: Random teams with legit movesets only.
-** -fe , --legitrandomfullyevolved: Limits -lr teams to fully evolved pokémon only.
-** -lm , --legitrandomlegitmoves: Limits -lr teams to commonly accepted useful moves only.
+** -fe , --legitrandomfullyevolved: Limits teams to fully evolved pokémon only. Works with -lr
+** -lm , --legitrandomlegitmoves: Limits teams to commonly accepted useful moves only. Works with -lr
 * -sr , --structuredrandom: Random teams with preset movesets
-** -srm , --srmega: Limits amount of Mega evolutions in -sr teams
-** -srz , --srzmove: Limits amount of Z moves in -sr teams
-** -src , --srchoice: Limits amount of choice items in -sr teams
-** -srub , --srultrabeast: Limits amount of ultra beasts in -sr teams
-** -srut , --sruniquetypes: Every mon in the team has an unique type
+** -m , --mega: Limits amount of mega evolutions in teams. Works with -sr
+** -zm , --zmove: Limits amount of Z moves in teams. Works with -sr
+** -c , --choice: Limits amount of choice items in teams. Works with -sr
+** -ub , --ultrabeast: Limits amount of ultra beasts in teams. Works with -sr
+** -ut , --uniquetypes: Every Pokemon in the team has an unique type. Works with -sr
 
 # Secondary script: LoadData.py
-It is used to load the specific data of each Pokemon PokeAPI supports and save it into a .json file. It is meant to be used when the data needs to be updated due to a new generation and the data will most likely be uploaded to this repository anyway.
+It is used to load the specific data of each Pokemon PokeAPI supports and save it into a .json file. It is meant to be used when the data needs to be updated due to a new generation. The data will most likely be uploaded to this repository anyway, so there is no need to use this script whatsoever. If you really need to, use `python LoadData.py -h`.
 
