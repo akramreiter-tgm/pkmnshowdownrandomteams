@@ -20,17 +20,17 @@ parser.add_argument("-lr", "--legitrandom",
 					
 parser.add_argument("-sr", "--structuredrandom",
 					help="Random teams with preset movesets",action='store_true')
-					
-parser.add_argument("-m", "--mega",
-					help="Limits amount of mega evolutions in teams.\nWorks with -sr",
-					type=int, required=False, default=1, nargs='?', const=True)
-					
+						
 parser.add_argument("-fe", "--fullyevolved",
 					help="Limits teams to fully evolved pokémon only.\nWorks with -lr",action='store_true')
 					
 parser.add_argument("-lm", "--legitmoves",
 					help="Limits teams to commonly accepted useful moves only.\nWorks with -lr",action='store_true')
 					
+parser.add_argument("-m", "--mega",
+					help="Limits amount of mega evolutions in teams.\nWorks with -sr",
+					type=int, required=False, default=1, nargs='?', const=True)
+			
 parser.add_argument("-zm", "--zmove",
 					help="Limits amount of Z moves in teams.\nWorks with -sr",
 					type=int, required=False, default=1, nargs='?', const=True)
