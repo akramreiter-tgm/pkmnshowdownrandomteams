@@ -37,11 +37,11 @@ parser.add_argument("-zm", "--zmove",
 					
 parser.add_argument("-c", "--choice",
 					help="Limits amount of choice items in teams.\nWorks with -sr",
-					type=int, required=False, default=1, nargs='?', const=True)
+					type=int, required=False, default=-1, nargs='?', const=True)
 
 parser.add_argument("-ub", "--ultrabeast",
 					help="Limits amount of ultra beasts in teams.\nWorks with -sr",
-					type=int, required=False, default=1, nargs='?', const=True)
+					type=int, required=False, default=-1, nargs='?', const=True)
 					
 parser.add_argument("-ut", "--uniquetypes",
 					help="Every Pokemon in the team has an unique type.\nWorks with -sr", action='store_true')
@@ -268,7 +268,7 @@ def legitrandom():
 		writeoutput(mons, "balanced randomized")
 		
 		
-def structuredrandom(zmons = 1, megamons = 1, choice = 1, uniquetypes = False):
+def structuredrandom(zmons = 1, megamons = 1, choice = 1, ultrabeast = 1, uniquetypes = False):
 	"""
 	Formerly known as AlexRandon
 	TODO: Implement uniquetypes
@@ -278,54 +278,81 @@ def structuredrandom(zmons = 1, megamons = 1, choice = 1, uniquetypes = False):
 
 	print(pkmn)
 	temp = []
+	utypes = []
 	for x in range(0,6):
 		temp.append({})
 	for x in temp:
-		tmon = pkmn[randint(0,len(pkmn) - 1)]
-		x["name"] = tmon["name"]
 		while True:
+			tmon = pkmn[randint(0,len(pkmn) - 1)]
+			for tempset in tmon["sets"]:
+				if "z" in tempset["tags"]:
+					if zmons == 0:
+						tmon["sets"].remove(tempset)
+						continue
+				if "mega" in tempset["tags"]:
+					if megamons == 0:
+						tmon["sets"].remove(tempset)
+						continue
+				if "choice" in tempset["tags"]:
+					if choice == 0:
+						tmon["sets"].remove(tempset)
+						continue
+				if "ub" in tempset["tags"]:
+					if ultrabeast == 0:
+						tmon["sets"].remove(tempset)
+						continue
+				if uniquetypes:
+					types = []
+					for stri in tempset["tags"]:
+						if stri.startswith("mt"):
+							types.append(stri)
+					broken = False
+					for stri in types:
+						if stri in types:
+							broken = True
+					if (broken):
+						tmon["sets"].remove(tempset)
+						continue
+
+			if len(tmon["sets"]) == 0:
+				pkmn.remove(tmon)
+				continue
 			sets = []
 			for y in range(0, len(tmon["sets"])):
 				for z in range(0, tmon["sets"][y]["weight"]):
 					sets.append(y)
 			print(sets)
 			setnr = sets[randint(0, len(sets) - 1)]
-			set = tmon["sets"][setnr]
-			if "z" in set["tags"]:
-				if (zmons == 0):
-					tmon["sets"].remove(set)
-					continue
-				else:
-					zmons -= 1
-			if "mega" in set["tags"]:
-				if (megamons == 0):
-					tmon["sets"].remove(set)
-					continue
-				else:
-					megamons -= 1
-			if "choice" in set["tags"]:
-				if (choice == 0):
-					tmon["sets"].remove(set)
-					continue
-				else:
-					choice -= 1
-
+			temp2set = tmon["sets"][setnr]
+			if uniquetypes:
+				for stri in temp2set["tags"]:
+					if stri.startswith("mt"):
+						utypes.append(stri)
+			if "z" in temp2set["tags"]:
+				zmons -= 1
+			if "mega" in temp2set["tags"]:
+				megamons -= 1
+			if "choice" in temp2set["tags"]:
+				choice -= 1
+			if "ub" in temp2set["tags"]:
+				ultrabeast -= 1
+			x["name"] = tmon["name"]
 			x["item"] = ""
-			x["item"] = set["item"]
-			x["ability"] = set["ability"]
-			x["level"] = set["level"]
-			x["ev"] = set["ev"]
-			x["iv"] = set["iv"]
-			x["nature"] = set["nature"]
-			x["moves"] = set["movesets"][randint(0, len(set["movesets"]) - 1)]
-			break
+			x["item"] = temp2set["item"]
+			x["ability"] = temp2set["ability"]
+			x["level"] = temp2set["level"]
+			x["ev"] = temp2set["ev"]
+			x["iv"] = temp2set["iv"]
+			x["nature"] = temp2set["nature"]
+			x["moves"] = temp2set["movesets"][randint(0, len(temp2set["movesets"]) - 1)]
 
-		if len(tmon["group"]) > 0:
-			for mon in pkmn:
-				if mon["group"] == tmon["group"]:
-					pkmn.remove(mon)
-		else:
-			pkmn.remove(tmon)
+			if len(tmon["group"]) > 0:
+				for mon in pkmn:
+					if mon["group"] == tmon["group"]:
+						pkmn.remove(mon)
+			else:
+				pkmn.remove(tmon)
+			break
 
 	print(temp)
 	print(returnoutput(temp))
@@ -341,7 +368,7 @@ def generateteams():
 	if args.legitrandom:
 		legitrandom()
 	if args.structuredrandom:
-		structuredrandom(args.zmove, args.mega)
+		structuredrandom(args.zmove, args.mega, args.choice, args.ultrabeast, args.uniquetypes)
 
 
 if __name__ == '__main__':

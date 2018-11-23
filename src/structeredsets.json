@@ -3949,6 +3949,702 @@
 					]
 				}
 			]
+		},
+
+		{
+			"name":"Conkeldurr",
+			"group":"",
+			"sets":[
+				{
+					"item":"Flame Orb",
+					"weight":1,
+					"tags":["uubl","mtfighting"],
+					"ability":"Guts",
+					"level":71,
+					"ev":"252 HP / 252 Atk / 4 SpD",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Mach Punch",
+							"Knock Off",
+							"Facade",
+							"Drain Punch"
+						],
+						[
+							"Mach Punch",
+							"Bulk Up",
+							"Facade",
+							"Drain Punch"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Diggersby",
+			"group":"",
+			"sets":[
+				{
+					"item":"Choice Band",
+					"weight":1,
+					"tags":["uubl","choice","mtnormal","mtground"],
+					"ability":"Huge Power",
+					"level":71,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Earthquake",
+							"Return",
+							"Quick Attack",
+							"Fire Punch"
+						],
+						[
+							"Earthquake",
+							"Return",
+							"Quick Attack",
+							"Ice Punch"
+						],
+						[
+							"Earthquake",
+							"Return",
+							"Quick Attack",
+							"Thunder Punch"
+						]
+					]
+				},
+				{
+					"item":"Life Orb",
+					"weight":1,
+					"tags":["uubl","mtnormal","mtground"],
+					"ability":"Huge Power",
+					"level":71,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Earthquake",
+							"Return",
+							"Quick Attack",
+							"Fire Punch"
+						],
+						[
+							"Earthquake",
+							"Return",
+							"Quick Attack",
+							"Ice Punch"
+						],
+						[
+							"Earthquake",
+							"Return",
+							"Quick Attack",
+							"Thunder Punch"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Dragonite",
+			"group":"",
+			"sets":[
+				{
+					"item":"Flyinium Z",
+					"weight":1,
+					"tags":["uubl","mtflying","mtdragon","z"],
+					"ability":"Multiscale",
+					"level":71,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Dragon Dance",
+							"Fly",
+							"Earthquake",
+							"Extreme Speed"
+						]
+					]
+				},
+				{
+					"item":"Weakness Policy",
+					"weight":1,
+					"tags":["uubl","mtflying","mtdragon"],
+					"ability":"Multiscale",
+					"level":71,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Dragon Dance",
+							"Dragon Claw",
+							"Earthquake",
+							"Extreme Speed"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Gallade",
+			"group":"Gardevoir",
+			"sets":[
+				{
+					"item":"Galladite",
+					"weight":3,
+					"tags":["uubl","mtfighting","mtpsychic","mega"],
+					"ability":"Justified",
+					"level":71,
+					"ev":"252 Atk / 4 Def / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Swords Dance",
+							"Close Combat",
+							"Zen Headbutt",
+							"Knock Off"
+						]
+					]
+				},
+				{
+					"item":"Life Orb",
+					"weight":1,
+					"tags":["publ","mtfighting","mtpsychic"],
+					"ability":"Steadfast",
+					"level":77,
+					"ev":"252 Atk / 4 Def / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Swords Dance",
+							"Close Combat",
+							"Zen Headbutt",
+							"Knock Off"
+						],
+						[
+							"Swords Dance",
+							"Close Combat",
+							"Zen Headbutt",
+							"Leaf Blade"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Gardevoir",
+			"group":"Gardevoir",
+			"sets":[
+				{
+					"item":"Gardevoirite",
+					"weight":3,
+					"tags":["uubl","mtfairy","mtpsychic","mega"],
+					"ability":"Trace",
+					"level":71,
+					"ev":"252 SpA / 4 SpD / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Hyper Voice",
+							"Psyshock",
+							"Will-O-Wisp",
+							"Thunderbolt"
+						],
+						[
+							"Hyper Voice",
+							"Psyshock",
+							"Healing Wish",
+							"Thunderbolt"
+						],
+						[
+							"Hyper Voice",
+							"Psyshock",
+							"Calm Mind",
+							"Thunderbolt"
+						],
+						[
+							"Hyper Voice",
+							"Stored Power",
+							"Calm Mind",
+							"Wish"
+						]
+					]
+				},
+				{
+					"item":"Choice Scarf",
+					"weight":2,
+					"tags":["ru","mtfairy","mtpsychic","choice"],
+					"ability":"Trace",
+					"level":74,
+					"ev":"252 SpA / 4 SpD / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Hyper Voice",
+							"Psyshock",
+							"Trick",
+							"Thunderbolt"
+						]
+					]
+				},
+				{
+					"item":"Salac Berry",
+					"weight":1,
+					"tags":["ru","mtfairy","mtpsychic"],
+					"ability":"Trace",
+					"level":74,
+					"ev":"252 SpA / 4 SpD / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Hyper Voice",
+							"Psyshock",
+							"Calm Mind",
+							"Thunderbolt"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Heracross",
+			"group":"",
+			"sets":[
+				{
+					"item":"Heracronite",
+					"weight":3,
+					"tags":["uubl","mtbug","mtfighting","mega"],
+					"ability":"Moxie",
+					"level":71,
+					"ev":"252 Atk / 4 SpD / 252 Spe",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Swords Dance",
+							"Pin Missile",
+							"Rock Blast",
+							"Close Combat"
+						],
+						[
+							"Swords Dance",
+							"Pin Missile",
+							"Rock Blast",
+							"Bullet Seed"
+						]
+					]
+				},
+				{
+					"item":"Flame Orb",
+					"weight":2,
+					"tags":["uu","mtbug","mtfighting"],
+					"ability":"Guts",
+					"level":72,
+					"ev":"252 Atk / 4 SpD / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Swords Dance",
+							"Facade",
+							"Knock Off",
+							"Close Combat"
+						],
+						[
+							"Swords Dance",
+							"Facade",
+							"Megahorn",
+							"Close Combat"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Manaphy",
+			"group":"",
+			"sets":[
+				{
+					"item":"Waterium Z",
+					"weight":1,
+					"tags":["uubl","mtwater","z"],
+					"ability":"Hydration",
+					"level":71,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"",
+					"movesets":[
+						[
+							"Tail Glow",
+							"Rain Dance",
+							"Surf",
+							"Psychic"
+						]
+					]
+				},
+				{
+					"item":"Leftovers",
+					"weight":1,
+					"tags":["uubl","mtwater"],
+					"ability":"Hydration",
+					"level":71,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"",
+					"movesets":[
+						[
+							"Tail Glow",
+							"Ice Beam",
+							"Surf",
+							"Psychic"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Ninetales-Alola",
+			"group":"",
+			"sets":[
+				{
+					"item":"Light Clay",
+					"weight":1,
+					"tags":["hail","uubl","mtfairy","mtice"],
+					"ability":"Snow Warning",
+					"level":71,
+					"ev":"252 HP / 4 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"",
+					"movesets":[
+						[
+							"Aurora Veil",
+							"Hypnosis",
+							"Blizzard",
+							"Foul Play"
+						],
+						[
+							"Aurora Veil",
+							"Confuse Ray",
+							"Blizzard",
+							"Toxic"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Porygon-Z",
+			"group":"Porygon",
+			"sets":[
+				{
+					"item":"Normalium Z",
+					"weight":10,
+					"tags":["uubl","mtnormal","z"],
+					"ability":"Adaptability",
+					"level":71,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"0 Atk",
+					"movesets":[
+						[
+							"Thunderbolt",
+							"Ice Beam",
+							"Recover",
+							"Conversion"
+						],
+						[
+							"Thunderbolt",
+							"Ice Beam",
+							"Nasty Plot",
+							"Conversion"
+						],
+						[
+							"Thunderbolt",
+							"Psychic",
+							"Recover",
+							"Conversion"
+						],
+						[
+							"Thunderbolt",
+							"Psychic",
+							"Nasty Plot",
+							"Conversion"
+						],
+						[
+							"Thunderbolt",
+							"Shadow Ball",
+							"Recover",
+							"Conversion"
+						],
+						[
+							"Thunderbolt",
+							"Shadow Ball",
+							"Nasty Plot",
+							"Conversion"
+						],
+						[
+							"Psychic",
+							"Thunderbolt",
+							"Recover",
+							"Conversion"
+						],
+						[
+							"Psychic",
+							"Thunderbolt",
+							"Nasty Plot",
+							"Conversion"
+						],
+						[
+							"Psychic",
+							"Ice Beam",
+							"Recover",
+							"Conversion"
+						],
+						[
+							"Psychic",
+							"Ice Beam",
+							"Nasty Plot",
+							"Conversion"
+						]
+					]
+				},
+				{
+					"item":"Life Orb",
+					"weight":1,
+					"tags":["uubl","mtnormal"],
+					"ability":"Download",
+					"level":71,
+					"ev":"4 HP / 252 SpA / 252 Spe",
+					"nature":"Timid",
+					"iv":"",
+					"movesets":[
+						[
+							"Agility",
+							"Nasty Plot",
+							"Thunderbolt",
+							"Ice Beam"
+						],
+						[
+							"Agility",
+							"Nasty Plot",
+							"Psychic",
+							"Ice Beam"
+						],
+						[
+							"Agility",
+							"Nasty Plot",
+							"Thunderbolt",
+							"Psychic"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Salamance",
+			"group":"",
+			"sets":[
+				{
+					"item":"Focus Sash",
+					"weight":1,
+					"tags":["uubl","mtflying","mtdragon"],
+					"ability":"Moxie",
+					"level":71,
+					"ev":"252 Atk / 4 Def / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Dragon Dance",
+							"Outrage",
+							"Earthquake",
+							"Fire Fang"
+						]
+					]
+				},
+				{
+					"item":"Flyinium Z",
+					"weight":1,
+					"tags":["uubl","mtflying","mtdragon","z"],
+					"ability":"Moxie",
+					"level":71,
+					"ev":"252 Atk / 4 Def / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Dragon Dance",
+							"Fly",
+							"Earthquake",
+							"Fire Fang"
+						],
+						[
+							"Dragon Dance",
+							"Fly",
+							"Earthquake",
+							"Outrage"
+						]
+					]
+				},
+				{
+					"item":"Salamencite",
+					"weight":1,
+					"tags":["uber","mtflying","mtdragon"],
+					"ability":"Intimidate",
+					"level":68,
+					"ev":"252 Atk / 4 Def / 252 Spe",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Dragon Dance",
+							"Return",
+							"Earthquake",
+							"Roost"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Scolipede",
+			"group":"",
+			"sets":[
+				{
+					"item":"Focus Sash",
+					"weight":2,
+					"tags":["uubl","mtpoison","mtbug"],
+					"ability":"Speed Boost",
+					"level":71,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Adamant",
+					"iv":"",
+					"movesets":[
+						[
+							"Swords Dance",
+							"X-Scissor",
+							"Poison Jab",
+							"Protect"
+						]
+					]
+				},
+				{
+					"item":"Focus Sash",
+					"weight":1,
+					"tags":["uubl","mtpoison","mtbug"],
+					"ability":"Speed Boost",
+					"level":71,
+					"ev":"252 HP / 4 SpD / 252 Spe",
+					"nature":"Bold",
+					"iv":"",
+					"movesets":[
+						[
+							"Spikes",
+							"Toxic Spikes",
+							"Poison Jab",
+							"Endeavor"
+						]
+					]
+				},
+				{
+					"item":"Waterium Z",
+					"weight":1,
+					"tags":["uubl","mtpoison","mtbug"],
+					"ability":"Speed Boost",
+					"level":71,
+					"ev":"4 HP / 252 Atk / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Swords Dance",
+							"Earthquake",
+							"Poison Jab",
+							"Aqua Tail"
+						]
+					]
+				}
+			]
+		},
+		
+		{
+			"name":"Staraptor",
+			"group":"",
+			"sets":[
+				{
+					"item":"Choice Scarf",
+					"weight":7,
+					"tags":["uubl","mtnormal","mtflying","choice"],
+					"ability":"Reckless",
+					"level":71,
+					"ev":"252 Atk / 4 SpD / 252 Spe",
+					"nature":"Jolly",
+					"iv":"",
+					"movesets":[
+						[
+							"Brave Bird",
+							"Double-Edge",
+							"U-turn",
+							"Close Combat"
+						],
+						[
+							"Brave Bird",
+							"Double-Edge",
+							"U-turn",
+							"Pursuit"
+						],
+						[
+							"Brave Bird",
+							"Double-Edge",
+							"U-turn",
+							"Final Gambit"
+						],
+						[
+							"Brave Bird",
+							"Double-Edge",
+							"U-turn",
+							"Defog"
+						]
+					]
+				},
+				{
+					"item":"Sitrus Berry",
+					"weight":1,
+					"tags":["uubl","mtnormal","mtflying"],
+					"ability":"Reckless",
+					"level":71,
+					"ev":"252 Atk / 4 SpD / 252 Spe",
+					"nature":"Intimidate",
+					"iv":"",
+					"movesets":[
+						[
+							"Acrobatics",
+							"U-turn",
+							"Defog",
+							"Tailwind"
+						]
+					]
+				}
+			]
 		}
 
   	],
